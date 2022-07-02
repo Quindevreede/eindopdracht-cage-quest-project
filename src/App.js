@@ -6,6 +6,7 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import { AuthContext } from './context/AuthContext';
 import './App.css';
+import Footer from "./components/Footer";
 
 function App() {
   const { isAuth } = useContext(AuthContext);
@@ -29,6 +30,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer company="the Cage Company" year="2022"/>
       </>
   );
 }

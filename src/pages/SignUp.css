@@ -1,0 +1,29 @@
+.image-container {
+    flex-direction: row;
+}
+
+.nic-main-register {
+    width: 120px;
+    padding-bottom: 15px;
+    align-self: flex-start;
+}
+
+form {
+    text-align: left;
+}
+
+.form-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #f0a075;
+    border: none;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.form-button:hover {
+    background-color: #f5c0a3;
+    transition: 0.7s;
+}

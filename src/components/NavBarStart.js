@@ -1,44 +1,34 @@
 import React, { useContext } from 'react';
 import { useHistory, Link } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
-
+import "./NavBarStart.css";
 function NavBarStart() {
-  const { isAuth, logout } = useContext(AuthContext);
-  const history = useHistory();
+
+    const history = useHistory();
 
   return (
-    <nav>
-      <Link to="/">
+    <nav className="nav-bar-outer-content-container">
           <span className="logo-container">
-            <h3>
+            <h1>
               CAGE QUEST
-            </h3>
+            </h1>
           </span>
-      </Link>
 
-      {isAuth ?
-        <button
-          type="button"
-          onClick={logout}
-        >
-          Log uit
-        </button>
-        :
         <div>
           <button
+              className="nav-bar-button"
             type="button"
             onClick={() => history.push('/signin')}
           >
-            Log in
+            LOG IN
           </button>
           <button
+              className="nav-bar-button"
             type="button"
             onClick={() => history.push('/signup')}
           >
-            Registreren
+            REGISTER
           </button>
         </div>
-      }
     </nav>
   );
 }
