@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import axios from 'axios';
+import "./SignIn.css";
 import NavBarSignReg from "../components/NavBarSignReg";
 
 function SignIn() {
@@ -55,6 +56,7 @@ function SignIn() {
         <label htmlFor="email-field">
           Emailaddress:
           <input
+              className="form-container"
             type="email"
             id="email-field"
             name="email"
@@ -66,6 +68,7 @@ function SignIn() {
         <label htmlFor="password-field">
           Password:
           <input
+              className="form-container"
             type="password"
             id="password-field"
             name="password"

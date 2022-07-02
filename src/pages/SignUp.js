@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
+import "./SignUp.css"
 import NavBarSignReg from "../components/NavBarSignReg";
+import main from "../assets/main.jpg";
 
 function SignUp() {
   // state voor het formulier
@@ -30,7 +32,7 @@ function SignUp() {
     toggleLoading(true);
 
     try {
-      await axios.post('http://localhost:3000/register', {
+      await axios.post('https://frontend-educational-backend.herokuapp.com/api/auth/signup', {
         email: email,
         password: password,
         username: username,
@@ -51,15 +53,18 @@ function SignUp() {
   return (
     <>
       <NavBarSignReg />
-      <h1>Registreren</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque consectetur, dolore eaque eligendi
-        harum, numquam, placeat quisquam repellat rerum suscipit ullam vitae. A ab ad assumenda, consequuntur deserunt
-        doloremque ea eveniet facere fuga illum in numquam quia reiciendis rem sequi tenetur veniam?
-      </p>
+      <section className="outer-content-container start-container">
+        <div className="inner-content-container start-container">
+      <h1>REGISTER</h1>
+          <section className="image-container">
+            <img src={main} className="nic-main-register" alt="nicolas cage main"/>
+          <img src={main} className="nic-main-register" alt="nicolas cage main"/>
+          </section>
       <form onSubmit={handleSubmit}>
         <label htmlFor="email-field">
-          Emailadres:
+          EMAILADDRESS:
           <input
+              className="form-container"
             type="email"
             id="email-field"
             name="email"
@@ -69,8 +74,9 @@ function SignUp() {
         </label>
 
         <label htmlFor="username-field">
-          Gebruikersnaam:
+          USERNAME:
           <input
+              className="form-container"
             type="text"
             id="username-field"
             value={username}
@@ -79,8 +85,9 @@ function SignUp() {
         </label>
 
         <label htmlFor="password-field">
-          Wachtwoord:
+          PASSWORD:
           <input
+              className="form-container"
             type="password"
             id="password-field"
             name="password"
@@ -88,18 +95,20 @@ function SignUp() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
-        {error && <p className="error">Dit account bestaat al. Probeer een ander emailadres.</p>}
+        {error && <p className="error">ERROR</p>}
         <button
           type="submit"
           className="form-button"
           disabled={loading}
         >
-          Registreren
+          REGISTER
         </button>
 
       </form>
 
-      <p>Heb je al een account? Je kunt je <Link to="/signin">hier</Link> inloggen.</p>
+      <p>ALREADY HAVE AN ACCOUNT? <Link to="/signin">SIGN IN</Link></p>
+        </div>
+      </section>
     </>
   );
 }

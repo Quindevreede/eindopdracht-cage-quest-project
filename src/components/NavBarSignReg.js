@@ -1,20 +1,20 @@
 import React from 'react';
+import "./NavBarSignReg.css"
 import { useHistory, Link } from 'react-router-dom';
 
 function NavBarSignReg() {
     const history = useHistory();
 
     return (
-        <nav>
-            <Link to="/">
+        <nav className="nav-bar-outer-content-container">
           <span className="logo-container">
-            <h3>
-              REGISTER
-            </h3>
+            <h1>
+              CAGE QUEST
+            </h1>
           </span>
-            </Link>
             <div>
                     <button
+                        className="nav-bar-button"
                         type="button"
                         onClick={() => history.push('/')}
                     >
