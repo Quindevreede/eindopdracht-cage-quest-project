@@ -27,7 +27,6 @@
     border: none;
     color: black;
     margin-top: 4px;
-    margin-right: 14px;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
@@ -39,3 +38,4 @@
     background-color: #f0a075;
     transition: 0.7s;
 }
+

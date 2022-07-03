@@ -18,7 +18,7 @@ function App() {
             <Route exact path="/">
               <Start />
             </Route>
-            <Route exact path="/profile">
+            <Route path="/profile">
               {isAuth ? <Homepage /> : <Redirect to="/" />}
               <Homepage />
             </Route>

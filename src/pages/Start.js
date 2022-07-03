@@ -17,7 +17,7 @@ function Start() {
           <p>AMAZING NIC CAGE MOVIES</p>
       </section>
       <section>
-        <p className="start-text"><Link to="/signin">LOGIN</Link> / <Link to="/signup">REGISTER</Link> TO START YOUR QUEST !</p>
+        <p className="start-text"><Link to="/signup">REGISTER</Link> / <Link to="/signin">LOG IN</Link> TO START YOUR QUEST !</p>
       </section>
             </div>
         </section>

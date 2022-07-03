@@ -1,0 +1,58 @@
+.home-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.nic-main-home {
+    width: 180px;
+}
+
+.main-menu {
+    flex-direction: column;
+}
+
+.main-menu ul {
+    margin-top: 10px;
+}
+
+.main-menu ul li {
+    padding-top: 20px;
+    list-style-type: none;
+    text-align: left;
+}
+
+.main-menu ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-menu ul a:hover {
+    background-color: #f0a075;
+    transition: 0.7s;
+}
+
+.main-text {
+    text-align: left;
+}
+
+.main-text-one {
+    font-weight: bolder;
+}
+
+.main-text-two {
+    font-weight: bold;
+}
+
+.main-text-three {
+    font-weight: normal;
+}
+
+.main-text-four {
+    font-weight: normal;
+}
+
+.main-text-five {
+    font-weight: lighter;
+}
