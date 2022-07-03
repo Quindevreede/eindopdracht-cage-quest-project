@@ -8,12 +8,19 @@ function NavBarStart() {
   return (
     <nav className="nav-bar-outer-content-container">
           <span className="logo-container">
-            <h1>
-              CAGE QUEST
+            <h1 className="upper-logo">
+              <Link to="/">CAGE QUEST</Link>
             </h1>
           </span>
 
         <div>
+            <button
+                className="nav-bar-button"
+                type="button"
+                onClick={() => history.push('/signup')}
+            >
+                REGISTER
+            </button>
           <button
               className="nav-bar-button"
             type="button"
@@ -21,13 +28,7 @@ function NavBarStart() {
           >
             LOG IN
           </button>
-          <button
-              className="nav-bar-button"
-            type="button"
-            onClick={() => history.push('/signup')}
-          >
-            REGISTER
-          </button>
+
         </div>
     </nav>
   );

@@ -8,8 +8,8 @@ function NavBarSignReg() {
     return (
         <nav className="nav-bar-outer-content-container">
           <span className="logo-container">
-            <h1>
-              CAGE QUEST
+            <h1 className="upper-logo">
+              <Link to="/">CAGE QUEST</Link>
             </h1>
           </span>
             <div>

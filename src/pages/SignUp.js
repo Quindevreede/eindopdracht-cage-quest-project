@@ -106,7 +106,7 @@ function SignUp() {
 
       </form>
 
-      <p>ALREADY HAVE AN ACCOUNT? <Link to="/signin">SIGN IN</Link></p>
+      <p>ALREADY HAVE AN ACCOUNT? <Link to="/signin">LOG IN</Link></p>
         </div>
       </section>
     </>

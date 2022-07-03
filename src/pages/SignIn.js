@@ -4,9 +4,10 @@ import { AuthContext } from '../context/AuthContext';
 import axios from 'axios';
 import "./SignIn.css";
 import NavBarSignReg from "../components/NavBarSignReg";
+import main from "../assets/main.jpg";
 
 function SignIn() {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, toggleError] = useState(false);
 
@@ -26,8 +27,8 @@ function SignIn() {
     toggleError(false);
 
     try {
-      const result = await axios.post('http://localhost:3000/login', {
-        email: email,
+      const result = await axios.post('https://frontend-educational-backend.herokuapp.com/api/auth/signin', {
+        username: username,
         password: password,
       }, {
         cancelToken: source.token,
@@ -46,48 +47,54 @@ function SignIn() {
   }
 
   return (
-    <>
-      <NavBarSignReg />
-      <h1>Log In</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias cum debitis dolor dolore fuga id molestias
-        qui quo unde?</p>
+      <>
+        <NavBarSignReg />
+        <section className="outer-content-container start-container">
+          <div className="inner-content-container start-container">
+            <h1>LOG IN</h1>
+            <section className="image-container">
+              <img src={main} className="nic-main-register" alt="nicolas cage main"/>
+              <img src={main} className="nic-main-register" alt="nicolas cage main"/>
+              <img src={main} className="nic-main-register" alt="nicolas cage main"/>
+            </section>
 
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email-field">
-          Emailaddress:
-          <input
-              className="form-container"
-            type="email"
-            id="email-field"
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </label>
+            <form onSubmit={handleSubmit}>
+              <label htmlFor="username-field">
+              USERNAME:
+              <input
+                  className="form-container"
+                  type="text"
+                  id="username-field"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+              />
+            </label>
 
-        <label htmlFor="password-field">
-          Password:
-          <input
-              className="form-container"
-            type="password"
-            id="password-field"
-            name="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </label>
-        {error && <p className="error">Email/Password combination does not match.</p>}
+              <label htmlFor="password-field">
+                PASSWORD:
+                <input
+                    className="form-container"
+                    type="password"
+                    id="password-field"
+                    name="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+              </label>
+              {error && <p className="error">ERROR</p>}
 
-        <button
-          type="submit"
-          className="form-button"
-        >
-          Inloggen
-        </button>
-      </form>
+              <button
+                  type="submit"
+                  className="form-button"
+              >
+                LOG IN
+              </button>
+            </form>
 
-      <p>If you don't have an account: <Link to="/signup">Register</Link> first!</p>
-    </>
+            <p>DON'T HAVE AN ACCOUNT? <Link to="/signup">REGISTER</Link> FIRST!</p>
+          </div>
+        </section>
+      </>
   );
 }
 

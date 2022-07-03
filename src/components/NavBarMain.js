@@ -1,34 +1,28 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import "./NavBarMain.css";
+import { AuthContext } from '../context/AuthContext';
 import { useHistory, Link } from 'react-router-dom';
 
 function NavBarMain() {
     const history = useHistory();
+    const { logout } = useContext(AuthContext);
 
     return (
-        <nav>
-            <Link to="/">
+        <nav className="nav-bar-outer-content-container">
           <span className="logo-container">
-            <h3>
-              CAGE QUEST
-            </h3>
+            <h1 className="upper-logo">
+              <Link to="/profile">CAGE QUEST</Link>
+            </h1>
           </span>
-            </Link>
-
                 <div>
                     <button
+                        className="nav-bar-button"
                         type="button"
-                        onClick={() => history.push('/signin')}
-                    >
-                        HOME
-                    </button>
-                    <button
-                        type="button"
-                        onClick={() => history.push('/signup')}
+                        onClick={() => logout()}
                     >
                         LOGOUT
                     </button>
                 </div>
-            }
         </nav>
     );
 }
