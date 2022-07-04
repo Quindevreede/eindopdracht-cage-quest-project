@@ -7,6 +7,7 @@ import SignUp from './pages/SignUp';
 import { AuthContext } from './context/AuthContext';
 import './App.css';
 import Footer from "./components/Footer";
+import Quiz from "./pages/Quiz";
 
 function App() {
   const { isAuth } = useContext(AuthContext);
@@ -20,7 +21,9 @@ function App() {
             </Route>
             <Route path="/profile">
               {isAuth ? <Homepage /> : <Redirect to="/" />}
-              <Homepage />
+            </Route>
+            <Route exact path="/quiz">
+              <Quiz />
             </Route>
             <Route exact path="/signin">
               <SignIn />
