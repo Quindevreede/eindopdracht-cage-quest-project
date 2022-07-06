@@ -5,6 +5,7 @@ import { AuthContext } from '../context/AuthContext';
 import NavBarMain from "../components/NavBarMain";
 import axios from 'axios';
 import {Link} from "react-router-dom";
+import Bio from "../components/Bio";
 
 function Homepage() {
   const [profileData, setProfileData] = useState({});
@@ -58,8 +59,8 @@ function Homepage() {
           </div>
           </section>
           <section className="main-text">
-          <p className="main-text-one">NICOLAS CAGE WAS BORN NICOLAS KIM COPPOLA IN LONG BEACH CALIFORNIA (JANUARY 7, 1964).</p>
-          <p className="main-text-two">HE HAS ACTED IN MORE THAN 100 MOVIES AND IS NOT SHOWING ANY SIGNS OF SLOWING DOWN.</p>
+          <Bio />
+              <p className="main-text-two">NICOLAS CAGE HAS ACTED IN MORE THAN 100 MOVIES AND IS NOT SHOWING ANY SIGNS OF SLOWING DOWN.</p>
           <p className="main-text-three">THE MANY MOVIES HE HAS ACTED IN, VARIES WILDLY IN GENRE AND QUALITY, THEREFORE MOST PEOPLE DON’T UNDERSTAND WHAT ALL THE FUSS IS ABOUT..</p>
           <p className="main-text-four">BY TAKING THE QUIZ, AND/OR CHECKING OUT THE TOP 25 YOU’LL BE ABLE TO GET A GOOD STARTING POINT FOR YOUR QUEST TO BECOME A NIC CAGE EXPERT.</p>
           <p className="main-text-five">IF YOU WOULD LIKE EVEN MORE INFORMATION; SIGN UP TO OUR NEWSLETTER AND WE’LL KEEP YOU UP TO DATE ON EVERYTHING NICOLAS CAGE!</p>
