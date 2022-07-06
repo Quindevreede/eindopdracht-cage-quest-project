@@ -8,6 +8,8 @@ import { AuthContext } from './context/AuthContext';
 import './App.css';
 import Footer from "./components/Footer";
 import Quiz from "./pages/Quiz";
+import Top25 from "./pages/Top25";
+import Newsletter from "./pages/Newsletter";
 
 function App() {
   const { isAuth } = useContext(AuthContext);
@@ -24,6 +26,9 @@ function App() {
             </Route>
             <Route exact path="/quiz">
               <Quiz />
+            </Route>
+            <Route exact path="/newsletter">
+              <Newsletter />
             </Route>
             <Route exact path="/signin">
               <SignIn />
