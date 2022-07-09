@@ -18,9 +18,9 @@ function NavBarMain() {
                     <button
                         className="nav-bar-button"
                         type="button"
-                        onClick={() => logout()}
+                        onClick={() => history.push('/profile')}
                     >
-                        LOGOUT
+                        HOME
                     </button>
                 </div>
         </nav>

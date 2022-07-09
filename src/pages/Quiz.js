@@ -1,15 +1,16 @@
 import React from 'react';
 import './Quiz.css';
 import QuizComponent from "../components/QuizComponent";
-
-const apiKey = 'a0aac18fb528d2c26cc33ed4a52c554a';
+import NavBarMain from "../components/NavBarMain";
 
 function Quiz() {
 
         return (
             <>
-                <section className="outer-content-container start-container">
-                    <div className="inner-content-container start-container">
+                <NavBarMain />
+                <section className="outer-content-container">
+                    <div className="inner-content-container">
+                        <h1>HOME</h1>
                         <QuizComponent />
                     </div>
                 </section>

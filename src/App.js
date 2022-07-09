@@ -6,10 +6,11 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import { AuthContext } from './context/AuthContext';
 import './App.css';
-import Footer from "./components/Footer";
 import Quiz from "./pages/Quiz";
-import Top25 from "./pages/Top25";
+import Top10 from "./pages/Top10";
 import Newsletter from "./pages/Newsletter";
+import QuoteGenerator from "./pages/QuoteGenerator";
+
 
 function App() {
   const { isAuth } = useContext(AuthContext);
@@ -24,11 +25,17 @@ function App() {
             <Route path="/profile">
               {isAuth ? <Homepage /> : <Redirect to="/" />}
             </Route>
+            <Route path="/top10">
+              {isAuth ? <Top10 /> : <Redirect to="/" />}
+            </Route>
             <Route exact path="/quiz">
-              <Quiz />
+              {isAuth ? <Quiz /> : <Redirect to="/" />}
+            </Route>
+            <Route exact path="/quote-generator">
+              {isAuth ? <QuoteGenerator /> : <Redirect to="/" />}
             </Route>
             <Route exact path="/newsletter">
-              <Newsletter />
+              {isAuth ? <Newsletter /> : <Redirect to="/" />}
             </Route>
             <Route exact path="/signin">
               <SignIn />
@@ -38,7 +45,6 @@ function App() {
             </Route>
           </Switch>
         </div>
-        <Footer company="the Cage Company" year="2022"/>
       </>
   );
 }

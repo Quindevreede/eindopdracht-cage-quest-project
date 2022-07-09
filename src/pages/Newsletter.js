@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-
+import NavBarMain from "../components/NavBarMain";
+import "./Newsletter.css";
+import {Link} from "react-router-dom";
 function Newsletter() {
     // initialiseer één state variabele met daarin een object aan form-waardes
     // let op: de namen van de keys moeten overeenkomen met de name-attributen van de velden
     const [formState, setFormState] = useState({
         name: '',
-        age: 0,
+        age: [],
         newsletter: false,
         comments: '',
     })
@@ -30,11 +32,18 @@ function Newsletter() {
     }
 
     return (
+<>
+        <NavBarMain />
+    <section className="outer-content-container">
+        <div className="inner-content-container">
+
+            <section className="newsletter-container">
+                <h1>FILL IN THE FORM AND SUBMIT TO SUBSCRIBE TO OUR NEWSLETTER</h1>
         <form onSubmit={handleSubmit}>
             <fieldset>
-                <legend>USER DETAILS</legend>
+                <legend className="legend">USER DETAILS</legend>
 
-                <label htmlFor="details-name">
+                <label className="form-container" htmlFor="details-name">
                     NAME:
                     <input
                         type="text"
@@ -45,7 +54,7 @@ function Newsletter() {
                     />
                 </label>
 
-                <label htmlFor="details-age">
+                <label className='form-container' htmlFor="details-age">
                     AGE:
                     <input
                         type="number"
@@ -58,7 +67,7 @@ function Newsletter() {
             </fieldset>
 
             <fieldset>
-                <legend>QUESTIONS/COMMENTS</legend>
+                <legend className="legend">QUESTIONS/COMMENTS</legend>
 
                 <label htmlFor="newsletter-comments">
                     QUESTIONS/COMMENTS:
@@ -81,17 +90,26 @@ function Newsletter() {
                         checked={formState.newsletter}
                         onChange={handleFormChange}
                     />
-                    I WANT TO RECEIVE THE NEWSLETTER
+                    I AGREE TO THE TERMS
+                    <div className="terms-and-conditions">
+                        <Link to="//legaltemplates.net/form/terms-and-conditions"
+                          target={"_blank"} rel="noopener noreferrer">link to terms and conditions</Link>
+                    </div>
                 </label>
 
                 <button
                     disabled={formState.newsletter === false}
                     type="submit"
                 >
-                    SEND
+                    SUBMIT
                 </button>
             </fieldset>
         </form>
+            </section>
+        </div>
+    </section>
+
+    </>
     );
 }
 

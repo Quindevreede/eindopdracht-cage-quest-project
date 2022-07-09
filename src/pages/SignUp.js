@@ -53,8 +53,8 @@ function SignUp() {
   return (
     <>
       <NavBarSignReg />
-      <section className="outer-content-container start-container">
-        <div className="inner-content-container start-container">
+      <section className="outer-content-container">
+        <div className="inner-content-container">
       <h1>REGISTER</h1>
           <section className="image-container">
             <img src={main} className="nic-main-register" alt="nicolas cage main"/>
@@ -62,7 +62,7 @@ function SignUp() {
           </section>
       <form onSubmit={handleSubmit}>
         <label htmlFor="email-field">
-          EMAILADDRESS:
+          EMAIL ADDRESS:
           <input
               className="form-container"
             type="email"

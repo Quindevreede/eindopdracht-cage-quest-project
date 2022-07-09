@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import axios from 'axios';
 import "./SignIn.css";
-import NavBarSignReg from "../components/NavBarSignReg";
 import main from "../assets/main.jpg";
+import NavBarSignReg from "../components/NavBarSignReg";
 
 function SignIn() {
   const [username, setUsername] = useState('');
@@ -12,6 +12,7 @@ function SignIn() {
   const [error, toggleError] = useState(false);
 
   const { login } = useContext(AuthContext);
+  const history = useHistory();
   const source = axios.CancelToken.source();
 
   // mocht onze pagina ge-unmount worden voor we klaar zijn met data ophalen, aborten we het request
@@ -48,9 +49,10 @@ function SignIn() {
 
   return (
       <>
-        <NavBarSignReg />
-        <section className="outer-content-container start-container">
-          <div className="inner-content-container start-container">
+        <NavBarSignReg
+        />
+        <section className="outer-content-container">
+          <div className="inner-content-container">
             <h1>LOG IN</h1>
             <section className="image-container">
               <img src={main} className="nic-main-register" alt="nicolas cage main"/>

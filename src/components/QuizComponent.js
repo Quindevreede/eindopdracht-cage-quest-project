@@ -1,26 +1,26 @@
 import React, { useContext, useEffect, useState } from 'react';
-import './QuizComponent.css';
 import axios from 'axios';
 import {Link} from "react-router-dom";
+
 
 const apiKey = 'a0aac18fb528d2c26cc33ed4a52c554a';
 
 function QuizComponent() {
-    const [movies, setMovies] = useState([7091]);
+    const [movies, setMovies] = useState([774152]);
     const [endpoint, setEndpoint] = useState(`https://api.themoviedb.org/3/movie/${movies}?api_key=${apiKey}&language=en-US`);
     const [loading, toggleLoading] = useState(false);
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        // const source = axios.CancelToken.source();
+        const controller = new AbortController();
 
         async function fetchData() {
             toggleLoading(true);
             setError(false);
 
             try {
-                const { data } = await axios.get(endpoint);
-                // const { data } = await axios.get(endpoint, {cancelToken: source,});
+                const { data } = await axios.get(endpoint, {signal:controller.signal,
+                });
                 setMovies(data);
                 console.log(data);
             } catch(e) {
@@ -33,10 +33,10 @@ function QuizComponent() {
 
         fetchData();
 
-        // return function cleanup() {
-        // console.log("we gaan eraan..")
-        //     source.cancel();
-        // }
+        return function cleanup() {
+            console.log('We gaan eraan...');
+            controller.abort();
+        }
     }, [endpoint]);
 
     const questions = [
@@ -97,19 +97,19 @@ function QuizComponent() {
 
     const handleScoreOnPoints = (showScore) => {
         if (score === 0) {
-            return <button onClick={()=> setEndpoint(`https://api.themoviedb.org/3/movie/451?api_key=${apiKey}&language=en-US`)}>CLICK HERE FOR RECOMMENDATION
+            return <button className="quiz-button" onClick={()=> setEndpoint(`https://api.themoviedb.org/3/movie/451?api_key=${apiKey}&language=en-US`)}>CLICK HERE FOR RECOMMENDATION
             </button>;
         } else if (score === 1) {
-            return <button onClick={()=> setEndpoint(`https://api.themoviedb.org/3/movie/2757?api_key=${apiKey}&language=en-US`)}>CLICK HERE FOR RECOMMENDATION
+            return <button className="quiz-button" onClick={()=> setEndpoint(`https://api.themoviedb.org/3/movie/2757?api_key=${apiKey}&language=en-US`)}>CLICK HERE FOR RECOMMENDATION
             </button>;
         } else if (score === 2) {
-            return <button onClick={()=> setEndpoint(`https://api.themoviedb.org/3/movie/11699?api_key=${apiKey}&language=en-US`)}>CLICK HERE FOR RECOMMENDATION
+            return <button className="quiz-button"onClick={()=> setEndpoint(`https://api.themoviedb.org/3/movie/23483?api_key=${apiKey}&language=en-US`)}>CLICK HERE FOR RECOMMENDATION
             </button>;
         } else if (score === 3) {
-            return <button onClick={()=> setEndpoint(`https://api.themoviedb.org/3/movie/754?api_key=${apiKey}&language=en-US`)}>CLICK HERE FOR RECOMMENDATION
+            return <button className="quiz-button" onClick={()=> setEndpoint(`https://api.themoviedb.org/3/movie/754?api_key=${apiKey}&language=en-US`)}>CLICK HERE FOR RECOMMENDATION
             </button>;
         } else {
-            return <button onClick={()=> setEndpoint(`https://api.themoviedb.org/3/movie/460885?api_key=${apiKey}&language=en-US`)}>CLICK HERE FOR RECOMMENDATION
+            return <button className="quiz-button" onClick={()=> setEndpoint(`https://api.themoviedb.org/3/movie/460885?api_key=${apiKey}&language=en-US`)}>CLICK HERE FOR RECOMMENDATION
             </button>;
         }
     }
@@ -129,19 +129,19 @@ function QuizComponent() {
             {loading && <p>LOADING...</p>}
             {error && <p>DATA ERROR</p>}
 
-            <section className="outer-content-container start-container">
-                <div className="inner-content-container start-container">
-                    <div className='app'>
+            <p>ANSWER THE FOLLOWING QUESTIONS AND CLICK THE RECOMMENDATION BUTTON</p>
+                    <div className='quiz-container'>
                         {showScore ? (
                             <section>
                                 <div className='score-section'>
                                     {handleScoreOnPoints({score})}
-                                    <div className="movie-recommendation">
-                                        <p><b>{movies.title}</b></p>
-                                        <p>{movies.release_date.substring(0,4)}</p>
-                                        <Link to><button onClick={openTab}>IMDB</button></Link>
+                                    <div>
+                                        <h6>LAST RECOMMENDATION:</h6>
+                                        <h1 className="answer"><b>{movies.title}</b></h1>
+                                        <h4>{movies.release_date.substring(0,4)}</h4>
+                                        <Link to><button className="imdb-button" onClick={openTab}>IMDB</button></Link>
                                     </div>
-                                    <button onClick={() => handleResetButton(score)}>GO AGAIN!</button>
+                                    <button className="quiz-button" onClick={() => handleResetButton(score)}>GO AGAIN!</button>
                                 </div>
                             </section>
                         ) : (
@@ -155,15 +155,13 @@ function QuizComponent() {
                                 <div className='answer-section'>
                                     {questions[currentQuestion].answerOptions.map((answerOption,i) => (
                                         <div key={i}>
-                                            <button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+                                            <button className="quiz-button" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
                                         </div>
                                     ))}
                                 </div>
                             </>
                         )}
                     </div>
-                </div>
-            </section>
         </>
     );
 }
