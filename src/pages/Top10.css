@@ -1,3 +1,9 @@
+.top10-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
 .movie-class-even {
     display: flex;
     flex-direction: row;
@@ -55,4 +61,30 @@
 
 .movie-class__project-link:hover::after {
     width: 85px;
+}
+
+/*------------ 4. Media Queries -------------*/
+
+@media screen and (min-width: 550px) {
+
+    .movie-class__image-wrapper img {
+        width: 200px;
+        margin-bottom: 80px;
+        box-shadow: 0 32px 28px -10px rgba(0, 0, 0, 0.22);
+    }
+
+    .movie-class-even {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .movie-class-odd {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }

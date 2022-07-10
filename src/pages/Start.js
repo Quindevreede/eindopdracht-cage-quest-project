@@ -1,17 +1,17 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import main from '../assets/main.jpg';
+import { Link } from 'react-router-dom';
 import "./Start.css";
-import NavBarStart from "../components/NavBarStart";
+import main from '../assets/main.jpg';
+import NavBar from "../components/NavBar";
 
 function Start () {
     return (
         <>
-            <NavBarStart />
+            <NavBar/>
             <section className="outer-content-container">
                 <div className="inner-content-container">
                     <h1>W E L C O M E !</h1>
-                    <img src={main} className="nic-main" alt="nicolas cage main"/>
+                    <img src={ main } className="nic-main-one" alt="nicolas cage main"/>
                     <section>
                         <p>ON THIS APP WE HELP YOU ON YOUR QUEST TO FIND </p>
                         <p>AMAZING NIC CAGE MOVIES</p>

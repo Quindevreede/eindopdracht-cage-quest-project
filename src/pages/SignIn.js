@@ -2,9 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import axios from 'axios';
-import "./SignIn.css";
 import main from "../assets/main.jpg";
-import NavBarSignReg from "../components/NavBarSignReg";
+import NavBar from "../components/NavBar";
 
 function SignIn() {
   const [username, setUsername] = useState('');
@@ -49,15 +48,14 @@ function SignIn() {
 
   return (
       <>
-        <NavBarSignReg
-        />
+        <NavBar />
         <section className="outer-content-container">
           <div className="inner-content-container">
             <h1>LOG IN</h1>
             <section className="image-container">
-              <img src={main} className="nic-main-register" alt="nicolas cage main"/>
-              <img src={main} className="nic-main-register" alt="nicolas cage main"/>
-              <img src={main} className="nic-main-register" alt="nicolas cage main"/>
+              <img src={main} className="nic-main-three" alt="nicolas cage main"/>
+              <img src={main} className="nic-main-three" alt="nicolas cage main"/>
+              <img src={main} className="nic-main-three" alt="nicolas cage main"/>
             </section>
 
             <form onSubmit={handleSubmit}>

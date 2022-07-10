@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './QuoteGenerator.css';
-import NavBarMain from "../components/NavBarMain";
+import NavBar from "../components/NavBar";
+import main from "../assets/main.jpg";
 
 function QuoteGenerator() {
     const [quote, setQuote] = useState([0]);
@@ -33,17 +34,22 @@ function QuoteGenerator() {
 
     return (
         <>
-            <NavBarMain />
+            <NavBar />
             <section className="outer-content-container">
                 <div className="inner-content-container">
-            <div className="quote-generator">
-                <h1>RANDOM NIC CAGE</h1>
-                <h3><b>QUOTE GENERATOR:</b></h3>
+                    <h1>QUOTE GENERATOR:</h1>
+                    <section className="image-container">
+                        <img src={main} className="nic-main-four" alt="nicolas cage main"/>
+                        <img src={main} className="nic-main-four" alt="nicolas cage main"/>
+                        <img src={main} className="nic-main-four" alt="nicolas cage main"/>
+                        <img src={main} className="nic-main-four" alt="nicolas cage main"/>
+                    </section>
+                    <div className="quote-generator">
                 <h5 className="quote">QUOTE:</h5>
                 <h1>"{quote[0].quote}"</h1>
                 <p>{quote[0].title}</p>
                 <p>{quote[0].year}</p>
-                <button className="imdb-button" onClick={() => window.location.reload(false)}>CLICK FOR NEW QUOTE!</button>
+                <button className="button-quote" onClick={() => window.location.reload(false)}>CLICK FOR NEW QUOTE!</button>
             </div>
                 </div>
             </section>

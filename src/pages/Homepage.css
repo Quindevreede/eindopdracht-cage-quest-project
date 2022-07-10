@@ -5,10 +5,6 @@
     justify-content: flex-start;
 }
 
-.nic-main-home {
-    width: 180px;
-}
-
 .main-menu {
     flex-direction: column;
 }
@@ -24,12 +20,12 @@
 }
 
 .main-menu ul a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 
 .main-menu ul a:hover {
-    background-color: #f0a075;
+    background-color: var(--primary);
     transition: 0.7s;
 }
 
