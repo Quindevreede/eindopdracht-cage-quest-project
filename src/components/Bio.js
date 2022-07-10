@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
+import "./Bio.css"
 import {Link} from "react-router-dom";
 
 const apiKey = 'a0aac18fb528d2c26cc33ed4a52c554a';
@@ -49,14 +50,12 @@ function Bio() {
 
                     <div>
                         <section>
-                            <div>
-                                <div>
+                            <div className="bio-container">
                                     <p><b>{person.name}</b></p>
                                     <p>{person.birthday}</p>
                                     <p>{person.place_of_birth}</p>
-                                    <Link to><button onClick={openTab}>IMDB</button></Link>
+                                    <Link to><button className="imdb-button" onClick={openTab}>IMDB</button></Link>
                                 </div>
-                            </div>
                         </section>
                     </div>
 

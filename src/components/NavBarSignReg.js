@@ -1,5 +1,4 @@
 import React from 'react';
-import "./NavBarSignReg.css"
 import { useHistory, Link } from 'react-router-dom';
 
 function NavBarSignReg() {
