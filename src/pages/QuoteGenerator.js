@@ -16,21 +16,18 @@ function QuoteGenerator() {
                     signal:controller.signal,
                 });
                 console.log(response.data);
-                // we plaatsen de grap in de state-variabele "joke"
                 setQuote(response.data);
             } catch(e) {
                 console.error(e);
-                // de error opslaan in de state, zodat je dit op de pagina kunt laten zien!
             }
         }
         fetchQuote();
 
-        // UNMOUNT
         return function cleanup() {
             console.log('We gaan eraan...');
             controller.abort();
         }
-    }, []); //<--- MOUNT EFFECT
+    }, []);
 
     return (
         <>

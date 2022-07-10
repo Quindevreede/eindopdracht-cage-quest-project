@@ -3,7 +3,7 @@ import {useHistory,Link} from 'react-router-dom';
 import {AuthContext} from '../context/AuthContext';
 import "./NavBar.css";
 
-function NavBar () {
+function NavBar() {
     const {isAuth,logout,user} = useContext (AuthContext);
     const history = useHistory ();
 
