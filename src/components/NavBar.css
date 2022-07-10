@@ -1,6 +1,5 @@
 .nav-bar-outer-content-container {
     background: var(--primary);
-    /*Mocht een verouderde browser geen gradients ondersteunen, dan valt de browser terug op de "effen" achtergrondkleur hierboven*/
     background: linear-gradient(129deg, var(--primary) 0%, var(--secondary) 26%, var(--secondary-light)  100%);
     padding-bottom: 5px;
     display: flex;
@@ -11,7 +10,7 @@
 }
 
 .nav-bar-outer-content-container h1 {
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 20px;
 }
 
@@ -22,7 +21,6 @@
 
 .nav-bar-button {
     background: var(--primary);
-    /*Mocht een verouderde browser geen gradients ondersteunen, dan valt de browser terug op de "effen" achtergrondkleur hierboven*/
     background: linear-gradient(129deg, var(--secondary-light)  100%), var(--secondary) 26%, var(--primary) 0% ;
     border: none;
     color: black;
@@ -36,11 +34,11 @@
 }
 
 .nav-bar-button:hover {
-    background-color: #f0a075;
+    background-color: var(--primary);
     transition: 0.7s;
 }
 
 .upper-logo a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }

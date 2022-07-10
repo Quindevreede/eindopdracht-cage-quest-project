@@ -5,7 +5,7 @@ import {AuthContext} from '../context/AuthContext';
 import axios from 'axios';
 import {Link} from "react-router-dom";
 import Bio from "../components/Bio";
-import NavBarMain from "../components/NavBarMain";
+import NavBar from "../components/NavBar";
 
 function Homepage() {
     const [profileData, setProfileData] = useState({});
@@ -44,19 +44,19 @@ function Homepage() {
 
     return (
         <>
-            <NavBarMain/>
+            <NavBar/>
             <section className="outer-content-container">
                 <div className="inner-content-container">
-                    <h1>HOME</h1>
+                    <h1>HOMEPAGE</h1>
                     <section className="home-page">
                         <img src={main} className="nic-main-home" alt="nicolas cage main"/>
                         <div className="main-menu">
                             <p>welcome {user.username}</p>
                             <ul>
-                                <li><Link to="/quiz">QUIZ</Link></li>
-                                <li><Link to="/top10">TOP 10</Link></li>
-                                <li><Link to="/quote-generator">QUOTE GENERATOR</Link></li>
-                                <li><Link to="/newsletter">NEWSLETTER</Link></li>
+                                <li><Link to="/quiz"><b>QUIZ</b></Link></li>
+                                <li><Link to="/top10"><b>TOP 10</b></Link></li>
+                                <li><Link to="/quote-generator"><b>QUOTE GENERATOR</b></Link></li>
+                                <li><Link to="/newsletter"><b>NEWSLETTER</b></Link></li>
                             </ul>
                         </div>
                     </section>

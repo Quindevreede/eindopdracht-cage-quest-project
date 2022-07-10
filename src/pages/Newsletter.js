@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavBarMain from "../components/NavBarMain";
+import NavBar from "../components/NavBar";
 import "./Newsletter.css";
 import {Link} from "react-router-dom";
 function Newsletter() {
@@ -33,22 +33,33 @@ function Newsletter() {
 
     return (
 <>
-        <NavBarMain />
+        <NavBar />
     <section className="outer-content-container">
         <div className="inner-content-container">
 
             <section className="newsletter-container">
-                <h1>FILL IN THE FORM AND SUBMIT TO SUBSCRIBE TO OUR NEWSLETTER</h1>
+                <h1 className="title-newsletter">SUBSCRIBE TO OUR NEWSLETTER</h1>
         <form onSubmit={handleSubmit}>
             <fieldset>
                 <legend className="legend">USER DETAILS</legend>
 
-                <label className="form-container" htmlFor="details-name">
-                    NAME:
+                <label className="form-container" htmlFor="details-firstname">
+                    FIRST NAME:
                     <input
                         type="text"
-                        name="name"
-                        id="details-name"
+                        name="firstname"
+                        id="details-firstname"
+                        value={formState.name}
+                        onChange={handleFormChange}
+                    />
+                </label>
+
+                <label className="form-container" htmlFor="details-lastname">
+                    LAST NAME:
+                    <input
+                        type="text"
+                        name="lastname"
+                        id="details-lastname"
                         value={formState.name}
                         onChange={handleFormChange}
                     />
@@ -70,7 +81,6 @@ function Newsletter() {
                 <legend className="legend">QUESTIONS/COMMENTS</legend>
 
                 <label htmlFor="newsletter-comments">
-                    QUESTIONS/COMMENTS:
                     <textarea
                         name="comments"
                         id="comments"
@@ -86,6 +96,7 @@ function Newsletter() {
                 <label htmlFor="newsletter">
                     <input
                         type="checkbox"
+                        className="checkbox"
                         name="newsletter"
                         checked={formState.newsletter}
                         onChange={handleFormChange}
@@ -100,6 +111,7 @@ function Newsletter() {
                 <button
                     disabled={formState.newsletter === false}
                     type="submit"
+className="submit-button"
                 >
                     SUBMIT
                 </button>
