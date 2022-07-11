@@ -3,7 +3,19 @@
 }
 
 .submit-button {
-    margin-top: 15px;
-    padding: 8px;
+    background: var(--secondary);
+    border: none;
+    color: var(--black);
+    margin-top:20px;
+    margin-right: 4px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: var(--primary);
+    transition: 0.7s;
 }

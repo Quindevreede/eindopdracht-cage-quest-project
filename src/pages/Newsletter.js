@@ -2,33 +2,14 @@ import React, { useState } from 'react';
 import NavBar from "../components/NavBar";
 import "./Newsletter.css";
 import {Link} from "react-router-dom";
+import { useForm } from 'react-hook-form';
+
 function Newsletter() {
-    // initialiseer één state variabele met daarin een object aan form-waardes
-    // let op: de namen van de keys moeten overeenkomen met de name-attributen van de velden
-    const [formState, setFormState] = useState({
-        name: '',
-        age: [],
-        newsletter: false,
-        comments: '',
-    })
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-    }
+    const { handleSubmit, formState: { errors }, register, watch } = useForm();
 
-    // handleFormChange wordt afgevuurd bij elke verandering en zorgt dan dat het huidige state object wordt gekopieerd
-    // alleen de object key van het bijbehorende inputveld wordt overschreven met een nieuwe waarde
-    function handleFormChange(e) {
-        const changedFieldName = e.target.name;
-        const newValue = e.target.type === "checkbox" ? e.target.checked : e.target.value;
-
-        setFormState({
-            ...formState,
-            [changedFieldName]: newValue,
-        });
-
-        console.log(`The value of input ${e.target.name} has just been set to ${e.target.value}`);
+    function onFormSubmit(data) {
+        console.log(data)
     }
 
     return (
@@ -39,81 +20,80 @@ function Newsletter() {
 
             <section className="newsletter-container">
                 <h1 className="title-newsletter">SUBSCRIBE TO OUR NEWSLETTER</h1>
-        <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit(onFormSubmit)}>
             <fieldset>
                 <legend className="legend">USER DETAILS</legend>
 
-                <label className="form-container" htmlFor="details-firstname">
-                    FIRST NAME:
+                <label htmlFor="details-name">
+                    Naam:
                     <input
                         type="text"
-                        name="firstname"
-                        id="details-firstname"
-                        value={formState.name}
-                        onChange={handleFormChange}
+                        id="details-name"
+                        className="form-container"
+                        {...register("name", {
+                            required: {
+                                value: true,
+                                message:"NAME IS REQUIRED!",
+                            },
+                            minLength: {
+                                value: 3,
+                                message: " NAME HAS TO BE AT LEAST 3 CHARACTERS",
+                            },
+                        })}
                     />
+                    {errors.name && <p>{errors.name.message}</p>}
                 </label>
 
-                <label className="form-container" htmlFor="details-lastname">
-                    LAST NAME:
-                    <input
-                        type="text"
-                        name="lastname"
-                        id="details-lastname"
-                        value={formState.name}
-                        onChange={handleFormChange}
-                    />
-                </label>
-
-                <label className='form-container' htmlFor="details-age">
+                <label htmlFor="details-age">
                     AGE:
                     <input
                         type="number"
-                        name="age"
                         id="details-age"
-                        value={formState.age}
-                        onChange={handleFormChange}
+                        className="form-container"
+                        {...register("age", {
+                            min: {
+                                value: 18,
+                                message: "YOU HAVE TO BE 18"
+                            }
+                        })}
                     />
+                    {errors.age && <p>{errors.age.message}</p>}
                 </label>
             </fieldset>
 
             <fieldset>
                 <legend className="legend">QUESTIONS/COMMENTS</legend>
-
-                <label htmlFor="newsletter-comments">
+                <label htmlFor="recipe-comments">
+                    <p>COMMENTS:</p>
                     <textarea
-                        name="comments"
-                        id="comments"
+                        {...register("comments", {
+                            maxLength: {
+                                value: 100,
+                                message: "MAX 100 CHARACTERS"
+                            },
+                        })}
+                        id="recipe-comments"
                         rows="4"
                         cols="40"
-                        placeholder="questions-comments"
-                        value={formState.comments}
-                        onChange={handleFormChange}
+                        placeholder="Do you have any comments?"
                     >
-          </textarea>
+                </textarea>
+                    {errors.comments && <p>{errors.comments.message}</p>}
                 </label>
-
-                <label htmlFor="newsletter">
+                <div>
+                <label htmlFor="recipe-newsletter">
                     <input
                         type="checkbox"
-                        className="checkbox"
-                        name="newsletter"
-                        checked={formState.newsletter}
-                        onChange={handleFormChange}
+                        {...register("newsletter")}
                     />
-                    I AGREE TO THE TERMS
-                    <div className="terms-and-conditions">
-                        <Link to="//legaltemplates.net/form/terms-and-conditions"
-                          target={"_blank"} rel="noopener noreferrer">link to terms and conditions</Link>
-                    </div>
+                    I AGREE WITH THE TERMS
                 </label>
-
-                <button
-                    disabled={formState.newsletter === false}
-                    type="submit"
-className="submit-button"
-                >
-                    SUBMIT
+                    </div>
+                <div className="terms-and-conditions">
+                    <Link to="//legaltemplates.net/form/terms-and-conditions"
+                          target={"_blank"} rel="noopener noreferrer">link to terms and conditions</Link>
+                </div>
+                <button type="submit" className="submit-button">SUBMIT
                 </button>
             </fieldset>
         </form>
