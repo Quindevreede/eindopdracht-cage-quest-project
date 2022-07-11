@@ -5,37 +5,12 @@ import {Link} from "react-router-dom";
 import { useForm } from 'react-hook-form';
 
 function Newsletter() {
-    // const [formState, setFormState] = useState({
-    //     firstname: '',
-    //     lastname:'',
-    //     age: [],
-    //     newsletter: false,
-    //     comments: '',
-    // })
 
     const { handleSubmit, formState: { errors }, register, watch } = useForm();
 
-    // function handleSubmit(e) {
-    //     e.preventDefault();
-    //     console.log(formState);
-    // }
     function onFormSubmit(data) {
         console.log(data)
     }
-
-    // handleFormChange wordt afgevuurd bij elke verandering en zorgt dan dat het huidige state object wordt gekopieerd
-    // alleen de object key van het bijbehorende inputveld wordt overschreven met een nieuwe waarde
-    // function handleFormChange(e) {
-    //     const changedFieldName = e.target.name;
-    //     const newValue = e.target.type === "checkbox" ? e.target.checked : e.target.value;
-    //
-    //     setFormState({
-    //         ...formState,
-    //         [changedFieldName]: newValue,
-    //     });
-    //
-    //     console.log(`The value of input ${e.target.name} has just been set to ${e.target.value}`);
-    // }
 
     return (
 <>
