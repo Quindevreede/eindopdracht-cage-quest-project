@@ -25,7 +25,7 @@ function Newsletter() {
                 <legend className="legend">USER DETAILS</legend>
 
                 <label htmlFor="details-name">
-                    Naam:
+                    NAME:
                     <input
                         type="text"
                         id="details-name"
