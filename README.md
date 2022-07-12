@@ -1,5 +1,7 @@
 ## App 'CAGE QUEST'
 
+the design for this app works best on small(mobile) screens
+
 ### Table of contents
 
 1. Project introduction
