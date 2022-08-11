@@ -73,7 +73,7 @@ function AuthContextProvider ( {children} ) {
             }
 
         } catch (e) {
-            console.error (e);
+            console.log ("no user has registered yet");
             toggleIsAuth ({
                 isAuth: false,
                 user: null,

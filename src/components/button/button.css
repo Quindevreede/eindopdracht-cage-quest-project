@@ -1,0 +1,51 @@
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    border-radius:10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn:disabled {
+    background-color: lightgrey;
+    color: dimgrey;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn--primary--solid {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none
+}
+
+.btn--secondary--solid {
+    background-color: deeppink;
+    color: var(--white);
+    border: none
+}
+
+.btn--tertiary--solid {
+    background-color: hotpink;
+    color: var(--white);
+    border: none
+}
+
+.btn--small {
+    padding: 10px 20px;
+    font-size: 10px;
+}
+
+.btn--medium {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.btn--large {
+    padding: 12px 35px;
+    font-size: 22px;
+}
+
+

@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Start.css";
-import main from '../assets/main.jpg';
-import NavBar from "../components/NavBar";
+import main from '../../assets/main.jpg';
 
 function Start () {
     return (
         <>
-            <NavBar/>
             <section className="outer-content-container">
                 <div className="inner-content-container">
                     <h1>W E L C O M E !</h1>

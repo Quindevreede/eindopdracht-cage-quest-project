@@ -69,6 +69,11 @@ a {
 }
 
 /*------------ 3.2 Other -------------*/
+
+.app {
+    min-height: calc(100vh - 34px);
+}
+
 .image-container {
     flex-direction: row;
 }
@@ -77,38 +82,13 @@ form {
     text-align: left;
 }
 
-.form-button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background: var(--primary);
-    border: none;
-    color: var(--black);
-    text-align: left;
-    text-decoration: none;
-    font-size: 16px;
-}
-
 .form-container {
     display: flex;
     flex-direction: column;
 }
 
-.form-button {
-    background: var(--primary);
-    border: none;
-    color: var(--black);
-    margin-top: 4px;
-    margin-right: 4px;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.form-button:hover {
-    background-color: var(--secondary);
-    transition: 0.7s;
+.nic-main-home {
+    width: 180px;
 }
 
 .nic-main-one {
@@ -126,10 +106,6 @@ form {
     width: 100px;
     padding-bottom: 15px;
     align-self: flex-start;
-}
-
-.nic-main-home {
-    width: 180px;
 }
 
 .nic-main-four {
@@ -162,6 +138,10 @@ form {
         position: relative;
     }
 
+    .nic-main-home {
+        width: 180px;
+    }
+
     .nic-main-one {
         width: 60%;
         align-self: flex-start;
@@ -179,10 +159,6 @@ form {
         padding-bottom: 15px;
         margin-right: 20px;
         align-self: center;
-    }
-
-    .nic-main-home {
-        width: 180px;
     }
 
     .nic-main-four {

@@ -1,9 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
+import { AuthContext } from '../../context/AuthContext';
 import axios from 'axios';
-import main from "../assets/main.jpg";
-import NavBar from "../components/NavBar";
+import main from "../../assets/main.jpg";
 
 function SignIn() {
   const [username, setUsername] = useState('');
@@ -48,7 +47,6 @@ function SignIn() {
 
   return (
       <>
-        <NavBar />
         <section className="outer-content-container">
           <div className="inner-content-container">
             <h1>LOG IN</h1>
