@@ -19,3 +19,11 @@
     background-color: var(--primary);
     transition: 0.7s;
 }
+
+button {
+    backgroundColor: '#ffb303',
+}
+
+disabledButton {
+    backgroundColor: '#cfcfcf',
+}

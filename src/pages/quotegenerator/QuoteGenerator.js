@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './QuoteGenerator.css';
-import NavBar from "../components/NavBar";
-import main from "../assets/main.jpg";
+import main from "../../assets/main.jpg";
 
 function QuoteGenerator() {
     const [quote, setQuote] = useState([0]);
@@ -31,7 +30,6 @@ function QuoteGenerator() {
 
     return (
         <>
-            <NavBar />
             <section className="outer-content-container">
                 <div className="inner-content-container">
                     <h1>QUOTE GENERATOR:</h1>

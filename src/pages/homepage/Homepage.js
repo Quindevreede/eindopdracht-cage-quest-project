@@ -1,57 +1,20 @@
 import React, {useContext, useEffect, useState} from 'react';
 import "./Homepage.css";
-import main from '../assets/main.jpg';
-import {AuthContext} from '../context/AuthContext';
-import axios from 'axios';
+import main from '../../assets/main.jpg';
 import {Link} from "react-router-dom";
-import Bio from "../components/Bio";
-import NavBar from "../components/NavBar";
+import Bio from "../../components/bio/Bio";
 
 function Homepage() {
-    const [profileData, setProfileData] = useState({});
-    const {user} = useContext(AuthContext);
-    const {logout} = useContext(AuthContext);
-
-    useEffect(() => {
-        const controller = new AbortController();
-
-        // we halen de pagina-content op in de mounting-cycle
-        async function fetchProfileData() {
-            // haal de token uit de Local Storage om in het GET-request te bewijzen dat we geauthoriseerd zijn
-            const token = localStorage.getItem('token');
-
-            try {
-                const result = await axios.get('https://frontend-educational-backend.herokuapp.com/api/test/user', {
-                    headers: {
-                        "Content-Type": "application/json",
-                        Authorization: `Bearer ${token}`,
-                    },
-                    signal: controller.signal,
-                });
-
-                setProfileData(result.data);
-            } catch(e) {
-                console.error(e);
-            }
-        }
-
-        fetchProfileData();
-
-        return function cleanup() {
-            controller.abort();
-        }
-    }, []);
 
     return (
         <>
-            <NavBar/>
             <section className="outer-content-container">
                 <div className="inner-content-container">
                     <h1>HOMEPAGE</h1>
                     <section className="home-page">
                         <img src={main} className="nic-main-home" alt="nicolas cage main"/>
                         <div className="main-menu">
-                            <p>welcome {user.username}</p>
+                            {/*<p>welcome {user.username}</p>*/}
                             <ul>
                                 <li><Link to="/quiz"><b>QUIZ</b></Link></li>
                                 <li><Link to="/top10"><b>TOP 10</b></Link></li>

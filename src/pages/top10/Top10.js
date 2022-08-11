@@ -1,28 +1,28 @@
 import React from 'react';
 import "./Top10.css";
-import NavBar from "../components/NavBar";
-import Top10Component from "../components/Top10Component";
-import RaisingArizona from "../assets/RaisingArizona.jpg";
-import Mandy from "../assets/Mandy.jpg";
-import LeavingLasVegas from "../assets/LeavingLasVegas.jpg";
-import BadLieutenantPort from "../assets/BadLieutenantPort.jpg";
-import Adaptation from "../assets/Adaptation.jpg";
-import BringingOutTheDead from "../assets/BringingOutTheDead.jpg";
-import ConAir from "../assets/ConAir.jpg";
-import MatchStickMen from "../assets/MatchStickMen.jpg";
-import WildAtHeart from "../assets/WildAtHeart.jpg";
-import VampiresKiss from "../assets/VampiresKiss.jpg";
+import Top10Component from "../../components/top10component/Top10Component";
+import RaisingArizona from "../../assets/RaisingArizona.jpg";
+import Mandy from "../../assets/Mandy.jpg";
+import LeavingLasVegas from "../../assets/LeavingLasVegas.jpg";
+import BadLieutenantPort from "../../assets/BadLieutenantPort.jpg";
+import Adaptation from "../../assets/Adaptation.jpg";
+import BringingOutTheDead from "../../assets/BringingOutTheDead.jpg";
+import ConAir from "../../assets/ConAir.jpg";
+import MatchStickMen from "../../assets/MatchStickMen.jpg";
+import WildAtHeart from "../../assets/WildAtHeart.jpg";
+import VampiresKiss from "../../assets/VampiresKiss.jpg";
 
 function Top10 () {
     return (
         <>
-            <NavBar/>
             <section className="outer-content-container">
                 <div className="inner-content-container">
                     <h1>TOP 10</h1>
                     <section className="top10-title">
                         <p>SCROLL DOWN TO SEE EVERY ENTRY</p>
                     </section>
+
+
 
                     <Top10Component
                         movieClass="movie-class-even"

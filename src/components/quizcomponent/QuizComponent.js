@@ -1,6 +1,7 @@
-import React,{ useContext,useEffect,useState } from 'react';
+import React,{ useEffect,useState } from 'react';
 import axios from 'axios';
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
+import questions from "../questions/questions";
 
 const apiKey = 'a0aac18fb528d2c26cc33ed4a52c554a';
 
@@ -39,44 +40,7 @@ function QuizComponent () {
         }
     },[ endpoint ] );
 
-    const questions = [
-        {
-            questionText: 'WHO IS YOUR FAVOURITE VAMPIRE?',
-            answerOptions: [
-                { answerText: 'DRACULA',isCorrect: false },
-                { answerText: 'NOSFERATU',isCorrect: false },
-                { answerText: 'BLADE',isCorrect: true },
-                { answerText: 'IM A VAMPIRE!',isCorrect: true },
-            ],
-        },
-        {
-            questionText: 'WHAT IS YOUR FAVOURITE FOOD?',
-            answerOptions: [
-                { answerText: 'PEACHES',isCorrect: true },
-                { answerText: 'COCKROACHES',isCorrect: true },
-                { answerText: 'TRUFFLES',isCorrect: false },
-                { answerText: 'PIZZA',isCorrect: false },
-            ],
-        },
-        {
-            questionText: 'WHO IS YOUR FAVOURITE DIRECTOR?',
-            answerOptions: [
-                { answerText: 'PANOS COSMATOS',isCorrect: true },
-                { answerText: 'MICHAEL BAY',isCorrect: true },
-                { answerText: 'THE COEN BROTHERS',isCorrect: false },
-                { answerText: 'MARTIN SCORSESE',isCorrect: false },
-            ],
-        },
-        {
-            questionText: 'WHAT IS YOUR FAVOURITE COLOUR?',
-            answerOptions: [
-                { answerText: 'RED',isCorrect: true },
-                { answerText: 'YELLOW',isCorrect: false },
-                { answerText: 'BLUE',isCorrect: true },
-                { answerText: 'ULTRA-VIOLET',isCorrect: true },
-            ],
-        },
-    ];
+
 
     const [ currentQuestion,setCurrentQuestion ] = useState ( 0 );
     const [ showScore,setShowScore ] = useState ( false );

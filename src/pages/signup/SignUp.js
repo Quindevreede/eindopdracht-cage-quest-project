@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
-import "./SignUp-SignIn.css"
-import NavBar from "../components/NavBar";
-import main from "../assets/main.jpg";
+import main from "../../assets/main.jpg";
 
 function SignUp () {
     const [ email, setEmail ] = useState ( '' );
@@ -47,7 +45,6 @@ function SignUp () {
 
     return (
         <>
-            <NavBar/>
             <section className="outer-content-container">
                 <div className="inner-content-container">
                     <h1>REGISTER</h1>
