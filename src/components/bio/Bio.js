@@ -1,7 +1,7 @@
-import React,{useContext,useEffect,useState} from 'react';
+import React,{useEffect,useState} from 'react';
 import axios from 'axios';
 import "./Bio.css"
-import {Link} from "react-router-dom";
+import Button from "../button/Button";
 
 const apiKey = 'a0aac18fb528d2c26cc33ed4a52c554a';
 
@@ -55,9 +55,14 @@ function Bio() {
                         <p><b>{ person.name }</b></p>
                         <p>{ person.birthday }</p>
                         <p>{ person.place_of_birth }</p>
-                        <Link to>
-                            <button className="imdb-button" onClick={ openTab }>IMDB</button>
-                        </Link>
+                        <Button
+                            buttonStyle="btn--imdb"
+                            buttonSize="btn--small"
+                            type="button"
+                            onClick={ openTab }
+                        >
+                            IMDB
+                        </Button>
                     </div>
                 </section>
             </div>

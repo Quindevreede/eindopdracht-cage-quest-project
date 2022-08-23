@@ -1,6 +1,7 @@
 import React,{useContext} from 'react';
 import {useHistory,Link} from 'react-router-dom';
 import {AuthContext} from '../../context/AuthContext';
+import Button from "../button/Button";
 import "./NavBar.css";
 
 function NavBar() {
@@ -8,43 +9,62 @@ function NavBar() {
     const history = useHistory ();
 
     return (
-        <nav className="nav-bar-outer-content-container">
-          <span className="logo-container">
-            <h1 className="upper-logo">
-              <Link to="/profile">CAGE QUEST</Link>
-            </h1>
-          </span>
+        <nav className="nav-bar-outer-content__container">
 
             { isAuth ?
-                <div>
-                    <button
-                        className="nav-bar-button"
-                        onClick={ () => history.push ('/profile') }
+                <>
+                    <span className="logo__container">
+            <h1 className="upper--logo">
+                <Link to="/homepage">CAGE QUEST</Link>
+            </h1>
+          </span>
+                <div className="nav-bar--button">
+                    <Button
+                        onClick={ () => history.push ('/homepage') }
+                        type="button"
+                        buttonStyle="btn--navbar"
+                        buttonSize="btn--medium"
                     >
-                        <h3>HOME</h3>
-                    </button>
-                    <button
-                        className="nav-bar-button"
+                        HOME
+                    </Button>
+
+                    <Button
                         onClick={ logout }
+                        type="button"
+                        buttonStyle="btn--navbar"
+                        buttonSize="btn--medium"
                     >
-                        <h3>LOG OUT</h3>
-                    </button>
+                        LOGOUT
+                    </Button>
                 </div>
+                </>
                 :
-                <div>
-                    <button
-                        className="nav-bar-button"
-                        onClick={ () => history.push ('/signin') }
-                    >
-                        <h3>LOG IN</h3>
-                    </button>
-                    <button
-                        className="nav-bar-button"
-                        onClick={ () => history.push ('/signup') }
-                    >
-                        <h3>REGISTER</h3>
-                    </button>
-                </div>
+                <>
+                    <span className="logo__container">
+                        <h1 className="upper--logo">
+                            <Link to="/">CAGE QUEST</Link>
+                        </h1>
+                    </span>
+                    <div className="nav-bar--button">
+                        <Button
+                            onClick={ () => history.push ('/signin') }
+                            type="button"
+                            buttonStyle="btn--navbar"
+                            buttonSize="btn--medium"
+                        >
+                            LOGIN
+                        </Button>
+
+                        <Button
+                            onClick={ () => history.push ('/signup') }
+                            type="button"
+                            buttonStyle="btn--navbar"
+                            buttonSize="btn--medium"
+                        >
+                            REGISTER
+                        </Button>
+                    </div>
+                </>
             }
         </nav>
     );

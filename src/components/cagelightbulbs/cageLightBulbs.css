@@ -1,0 +1,35 @@
+.bulbs {
+    margin-bottom: 30px;
+}
+
+.bulb-off,
+.bulb-on {
+    width: 300px;
+    height: 100px;
+    background-size: 100px;
+    display: inline-block;
+}
+
+.bulb-off {
+    background-image: url("../../assets/main_add.jpg");
+}
+
+.bulb-on {
+    background-image: url("../../assets/main_on.jpg");
+}
+
+@media screen and (min-width: 660px) {
+
+    .bulbs {
+        margin: 20px;
+    }
+
+    .bulb-off,
+    .bulb-on {
+        width: 500px;
+        height: 100px;
+        background-size: 100px;
+        display: inline-block;
+    }
+
+}

@@ -1,20 +1,11 @@
 import React from "react";
 import "./button.css";
 
-{/*<Button*/}
-{/*    onCLick={console.log("BLABLABLA")}*/}
-{/*    type="button"*/}
-{/*    buttonStyle="btn--tertiary"*/}
-{/*    buttonSize="btn--small"*/}
-{/*    >BLOEB</Button>*/}
-
 const buttonStyles = [
-    "btn--primary--solid",
-    "btn--secondary--solid",
-    "btn--tertiary--solid",
-    "btn--primary--outline",
-    "btn--secondary--outline",
-    "btn--tertiary--outline",
+    "btn--navbar",
+    "btn--default",
+    "btn--form",
+    "btn--imdb",
 ]
 
 const buttonSizes = [
@@ -26,7 +17,7 @@ const buttonSizes = [
 function Button({
     children,
     type,
-    onCLick,
+    onClick,
     buttonStyle,
     buttonSize,
     disabled
@@ -44,7 +35,7 @@ function Button({
     return (
         <button
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-            onClick={onCLick}
+            onClick={onClick}
             type={type}
             disabled={disabled}>
             {children}

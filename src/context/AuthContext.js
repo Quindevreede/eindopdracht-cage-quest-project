@@ -21,6 +21,7 @@ function AuthContextProvider ( {children} ) {
             const decoded = jwt_decode (token);
             fetchUserData (decoded.sub,token);
         } else {
+            localStorage.clear ();
             toggleIsAuth ({
                 isAuth: false,
                 user: null,
@@ -29,11 +30,12 @@ function AuthContextProvider ( {children} ) {
         }
     },[]);
 
+
     function login ( JWT ) {
         localStorage.setItem ('token',JWT);
         const decoded = jwt_decode (JWT);
 
-        fetchUserData (decoded.sub,JWT,'/profile');
+        fetchUserData (decoded.sub,JWT,'/homepage');
     }
 
     function logout () {
@@ -50,29 +52,30 @@ function AuthContextProvider ( {children} ) {
 
     async function fetchUserData ( id,token,redirectUrl ) {
         try {
-            const result = await axios.get (`https://frontend-educational-backend.herokuapp.com/api/user`,{
-                headers: {
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer ${ token }`,
+            const result = await axios.get ( `https://frontend-educational-backend.herokuapp.com/api/user`, {
+                headers : {
+                    "Content-Type" : "application/json",
+                    Authorization : `Bearer ${ token }`,
                 },
             });
 
-            toggleIsAuth ({
+            toggleIsAuth ( {
                 ...isAuth,
-                isAuth: true,
-                user: {
-                    username: result.data.username,
-                    email: result.data.email,
-                    id: result.data.id,
+                isAuth : true,
+                user : {
+                    username : result.data.username,
+                    email : result.data.email,
+                    id : result.data.id,
                 },
-                status: 'done',
-            });
+                status : 'done',
+            } );
 
             if (redirectUrl) {
                 history.push (redirectUrl);
             }
 
         } catch (e) {
+            localStorage.clear ();
             console.log ("no user has registered yet");
             toggleIsAuth ({
                 isAuth: false,

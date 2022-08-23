@@ -1,6 +1,4 @@
-.top10-title {
-    display: flex;
-    flex-direction: column;
+.top10-sub-title {
     margin-bottom: 25px;
 }
 
@@ -18,38 +16,37 @@
     align-items: center;
 }
 
-.movie-class__image-wrapper {
+.movie-class--image-wrapper {
     flex-basis: 180px;
     flex-grow: 0;
     flex-shrink: 1;
 }
 
-.movie-class__image-wrapper img {
+.movie-class--image-wrapper img {
     width: 100px;
     box-shadow: 0 32px 28px -10px rgba(0, 0, 0, 0.22);
 }
 
-.movie-class__info-container {
+.movie-class--info-container {
     flex-basis: 250px;
     flex-grow: 0;
     flex-shrink: 0;
     padding: 0 20px 20px 20px;
 }
 
-
-.movie-class__info-container p {
+.movie-class--info-container p {
     font-weight: 400;
     padding: 20px 0;
 }
 
-.movie-class__project-link {
+.movie-class--project-link {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.movie-class__project-link::after {
+.movie-class--project-link::after {
     display: inline-block;
     content: '';
     width: 15px;
@@ -59,15 +56,15 @@
     transition: all 0.2s ease-in-out;
 }
 
-.movie-class__project-link:hover::after {
+.movie-class--project-link:hover::after {
     width: 85px;
 }
 
 /*------------ 4. Media Queries -------------*/
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 660px) {
 
-    .movie-class__image-wrapper img {
+    .movie-class--image-wrapper img {
         width: 200px;
         margin-bottom: 80px;
         box-shadow: 0 32px 28px -10px rgba(0, 0, 0, 0.22);

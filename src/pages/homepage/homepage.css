@@ -14,14 +14,16 @@
 }
 
 .main-menu ul li {
-    padding-top: 20px;
+    padding-top: 10px;
     list-style-type: none;
     text-align: left;
 }
 
 .main-menu ul a {
+    padding: 5px;
     color: var(--white);
     text-decoration: none;
+    border-radius:10px;
 }
 
 .main-menu ul a:hover {
@@ -31,6 +33,7 @@
 
 .main-text {
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .main-text-one {
