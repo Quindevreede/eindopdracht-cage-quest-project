@@ -9,7 +9,7 @@ the design for this app works best on small(mobile) screens
 3. API keys
 4. Installation Guide
 5. Starting the application
-6. Register and Login
+6. Register and Log-in
 
 ### 1. Project introduction
 
