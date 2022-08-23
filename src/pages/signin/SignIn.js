@@ -2,7 +2,10 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
 import axios from 'axios';
-import main from "../../assets/main.jpg";
+import Image from "../../components/image/Image";
+import PageTitle from "../../components/pagetitle/PageTitle";
+import InputField from "../../components/inputfield/InputField";
+import Button from "../../components/button/Button";
 
 function SignIn() {
   const [username, setUsername] = useState('');
@@ -13,7 +16,6 @@ function SignIn() {
   const history = useHistory();
   const source = axios.CancelToken.source();
 
-  // mocht onze pagina ge-unmount worden voor we klaar zijn met data ophalen, aborten we het request
   useEffect(() => {
     return function cleanup() {
       source.cancel();
@@ -33,10 +35,7 @@ function SignIn() {
         cancelToken: source.token,
       });
 
-      // log het resultaat in de console
       console.log(result.data);
-
-      // geef de JWT token aan de login-functie van de context mee
       login(result.data.accessToken);
 
     } catch (e) {
@@ -45,51 +44,56 @@ function SignIn() {
     }
   }
 
+  const handleChange =
+      ( e )  => { setPassword ( e.target.value )
+      };
+
   return (
       <>
-        <section className="outer-content-container">
-          <div className="inner-content-container">
-            <h1>LOG IN</h1>
-            <section className="image-container">
-              <img src={main} className="nic-main-three" alt="nicolas cage main"/>
-              <img src={main} className="nic-main-three" alt="nicolas cage main"/>
-              <img src={main} className="nic-main-three" alt="nicolas cage main"/>
-            </section>
+        <section className="outer-content__container">
+          <div className="inner-content__container">
+            <PageTitle text="LOG IN" />
+            <div className="image__container">
+              <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+              <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+            </div>
 
             <form onSubmit={handleSubmit}>
               <label htmlFor="username-field">
-              USERNAME:
-              <input
-                  className="form-container"
-                  type="text"
-                  id="username-field"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-              />
-            </label>
+                USERNAME:
+                <InputField
+                    className="form__container"
+                    type="text"
+                    id="username-field"
+                    value={ username }
+                    onChange={ ( e ) => setUsername ( e.target.value ) }
+                />
+              </label>
 
               <label htmlFor="password-field">
                 PASSWORD:
-                <input
-                    className="form-container"
+                <InputField
+                    className="form__container"
                     type="password"
                     id="password-field"
                     name="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    value={ password }
+                    onChange={ handleChange }
                 />
               </label>
-              {error && <p className="error">ERROR</p>}
+              { error && <p className="error-message">ERROR wrong input</p> }
 
-              <button
+              <Button
                   type="submit"
-                  className="form-button"
+                  buttonStyle="btn--form"
+                  buttonSize="btn--small"
               >
                 LOG IN
-              </button>
+              </Button>
             </form>
-
-            <p>DON'T HAVE AN ACCOUNT? <Link to="/signup">REGISTER</Link> FIRST!</p>
+            <section className="text__content">
+            <p>DON'T HAVE AN ACCOUNT? <Link to="/signup">REGISTER</Link></p>
+            </section>
           </div>
         </section>
       </>

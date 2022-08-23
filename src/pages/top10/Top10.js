@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Top10.css";
+import "./top10.css";
 import Top10Component from "../../components/top10component/Top10Component";
 import RaisingArizona from "../../assets/RaisingArizona.jpg";
 import Mandy from "../../assets/Mandy.jpg";
@@ -11,18 +11,25 @@ import ConAir from "../../assets/ConAir.jpg";
 import MatchStickMen from "../../assets/MatchStickMen.jpg";
 import WildAtHeart from "../../assets/WildAtHeart.jpg";
 import VampiresKiss from "../../assets/VampiresKiss.jpg";
+import PageTitle from "../../components/pagetitle/PageTitle";
+import Image from "../../components/image/Image";
 
 function Top10 () {
     return (
         <>
-            <section className="outer-content-container">
-                <div className="inner-content-container">
-                    <h1>TOP 10</h1>
-                    <section className="top10-title">
+            <section className="outer-content__container">
+                <div className="inner-content__container">
+                    <PageTitle text="TOP 10" />
+                    <div className="image__container">
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                    </div>
+                    <section className="top10-sub-title">
                         <p>SCROLL DOWN TO SEE EVERY ENTRY</p>
                     </section>
-
-
 
                     <Top10Component
                         movieClass="movie-class-even"

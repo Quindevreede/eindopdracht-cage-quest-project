@@ -1,0 +1,14 @@
+.filmography-component__container {
+    font-size: 12px
+}
+
+.filmography-component__container h1 {
+    font-size: 18px
+}
+
+.filmography-extra-info--container {
+    color: var(--linkcolor);
+    padding-top: 5px;
+}
+
+

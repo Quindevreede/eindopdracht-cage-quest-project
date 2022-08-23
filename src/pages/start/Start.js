@@ -1,22 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./Start.css";
-import main from '../../assets/main.jpg';
+import PageTitle from "../../components/pagetitle/PageTitle";
+import CageLightBulbs from "../../components/cagelightbulbs/CageLightBulbs";
 
 function Start () {
     return (
         <>
-            <section className="outer-content-container">
-                <div className="inner-content-container">
-                    <h1>W E L C O M E !</h1>
-                    <img src={ main } className="nic-main-one" alt="nicolas cage main"/>
-                    <section>
-                        <p>ON THIS APP WE HELP YOU ON YOUR QUEST TO FIND </p>
-                        <p>AMAZING NIC CAGE MOVIES</p>
-                    </section>
-                    <section>
-                        <p className="start-text"><Link to="/signup">REGISTER</Link> / <Link to="/signin">LOG
-                            IN</Link> TO START YOUR QUEST !</p>
+            <section className="outer-content__container">
+                <div className="inner-content__container">
+                    <PageTitle text="WELCOME" />
+                    <CageLightBulbs />
+                    <section className="text__content">
+                    <span id="text__content--1">ON THIS APP WE HELP YOU </span>
+                    <span id="text__content--2">ON YOUR QUEST TO FIND </span>
+                    <span id="text__content--3">AMAZING NIC CAGE MOVIES</span>
+                        <p><Link to="/signup"><br/>REGISTER</Link> / <Link to="/signin">LOG
+                            IN</Link> <strong>TO START YOUR QUEST</strong></p>
                     </section>
                 </div>
             </section>

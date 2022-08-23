@@ -1,0 +1,877 @@
+[
+  {
+    "title":"The Unbearable Weight of Massive Talent",
+    "year":"2022",
+    "runtime":"1h 47m",
+    "director":"Tom Gormican",
+    "lead_actors":["Nicolas Cage ","Pedro Pascal ","Tiffany Haddish "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt11291274/?ref_=nm_flmg_act_5"
+    },
+  {
+    "title":"Pig",
+    "year":"2021",
+    "runtime":"1h 32m",
+    "director":"Michael Sarnoski",
+    "lead_actors":["Nicolas Cage ","Alex Wolff ","Adam Arkin "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt11003218/?ref_=nm_flmg_act_6"
+  },
+  {
+    "title":"Willy's Wonderland",
+    "year":"2021",
+    "runtime":"1h 28m",
+    "director":"Kevin Lewis",
+    "lead_actors":["Nicolas Cage ","Emily Tosta ","Beth Grant "],
+    "rated":"TV MA",
+    "ïmdb": "https://www.imdb.com/title/tt8114980/?ref_=nm_flmg_act_7"
+  },
+  {
+  "title":"Prisoners Of The Ghostlan",
+  "year":"2021",
+  "runtime":"1h 43m",
+  "director":"Sion Sono",
+  "lead_actors":["Nicolas Cage ","Sofia Boutella ","Bill Moseley "],
+  "rated":"R",
+  "ïmdb": "https://www.imdb.com/title/tt6372694/?ref_=nm_flmg_act_8"
+},
+  {
+    "title":"The Croods: A New Age",
+    "year":"2020",
+    "runtime":"1h 35m",
+    "director":"Joel Crawford",
+    "lead_actors":["Nicolas Cage ","Emma Stone ","Ryan Reynolds "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt2850386/?ref_=nm_flmg_act_9"
+  },
+  {
+    "title":"Jio Jitsu",
+    "year":"2020",
+    "runtime":"1h 42m",
+    "director":"Dimitri Logothetis",
+    "lead_actors":["Nicolas Cage ","Frank Grillo ","Tony Jaa "],
+    "rated":"R",
+    "ïmdb": "imdb.com/title/tt9624766/?ref_=nm_flmg_act_10"
+  },
+  {
+    "title":"Grand Isle",
+    "year":"2019",
+    "runtime":"1h 37m",
+    "director":"Stephen S. Campanelli",
+    "lead_actors":["Nicolas Cage ","Kelsey Grammer ","KaDee Strickland "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt8380776/?ref_=nm_flmg_act_11"
+  },
+  {
+    "title":"Primal",
+    "year":"2019",
+    "runtime":"1h 37m",
+    "director":"Nick Powell",
+    "lead_actors":["Nicolas Cage ","Famke Janssen ","Michael Imperioli "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt7394816/?ref_=nm_flmg_act_12"
+  },
+  {
+    "title":"Kill Chain",
+    "year":"2019",
+    "runtime":"1h 31m",
+    "director":"Ken Sanzel",
+    "lead_actors":["Nicolas Cage ","Anabelle Acosta ","Enrico Colantoni "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt8535180/?ref_=nm_flmg_act_13"
+  },
+  {
+    "title":"Running With THe Devil",
+    "year":"2019",
+    "runtime":"1h 40m",
+    "director":"Jason Cabell",
+    "lead_actors":["Nicolas Cage ","Laurence Fishburne ","Cole Hauser "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt5792656/?ref_=nm_flmg_act_14"
+  },
+  {
+    "title":"Color Out Of Space",
+    "year":"2019",
+    "runtime":"1h 51m",
+    "director":"Richard Stanley",
+    "lead_actors":["Nicolas Cage ","Joely Richardson ","Madeleine Arthur "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt5073642/?ref_=nm_flmg_act_15"
+  },
+  {
+    "title":"A Score To Settle",
+    "year":"2019",
+    "runtime":"1h 43m",
+    "director":"Shawn Ku",
+    "lead_actors":["Nicolas Cage ","Noah Le Gros ","Karolina Wydra "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt3758162/?ref_=nm_flmg_act_16"
+  },
+  {
+    "title":"Spider-Man Into The Spider-Verse",
+    "year":"2018",
+    "runtime":"1h 57m",
+    "director":"Bob Persichetti",
+    "lead_actors":["Nicolas Cage ","Hailee Steinfeld ","Shameik Moore "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt4633694/?ref_=nm_flmg_act_17"
+  },
+  {
+    "title":"Between Worlds",
+    "year":"2018",
+    "runtime":"1h 30m",
+    "director":"Maria Pulera",
+    "lead_actors":["Nicolas Cage ","Franka Potente ","Penelope Mitchell "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt7295450/?ref_=nm_flmg_act_18"
+  },
+  {
+    "title":"Teen Titans Go To The Movies",
+    "year":"2018",
+    "runtime":"1h 24m",
+    "director":"Aaron Horvath",
+    "lead_actors":["Nicolas Cage ","Tara Strong ","Scott Menville "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt7424200/?ref_=nm_flmg_act_19"
+  },
+  {
+    "title":"211",
+    "year":"2018",
+    "runtime":"1h 26m",
+    "director":"York Alec Shackleton",
+    "lead_actors":["Nicolas Cage ","Sophie Skelton ","Dwayne Cameron "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt4976192/?ref_=nm_flmg_act_20"
+  },
+  {
+    "title":"Looking Glass",
+    "year":"2018",
+    "runtime":"1h 43m",
+    "director":"Tim Hunter",
+    "lead_actors":["Nicolas Cage ","Robin Tunney ","Marc Blucas "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt6083648/?ref_=nm_flmg_act_21"
+  },
+  {
+    "title":"Mandy",
+    "year":"2018",
+    "runtime":"2h 1m",
+    "director":"Panos Cosmatos",
+    "lead_actors":["Nicolas Cage ","Andrea Riseborough ","Linus Roache "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt6998518/?ref_=nm_flmg_act_22"
+  },
+  {
+    "title":"The Humanity Bureau",
+    "year":"2017",
+    "runtime":"1h 35m",
+    "director":"Rob W. King",
+    "lead_actors":["Nicolas Cage ","Sarah Lind ","Jakob Davies "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt6143568/?ref_=nm_flmg_act_24"
+  },
+  {
+    "title":"Mom And Dad",
+    "year":"2017",
+    "runtime":"1h 26m",
+    "director":"Brian Taylor",
+    "lead_actors":["Nicolas Cage ","Selma Blair ","Anne Winters "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt5462326/?ref_=nm_flmg_act_25"
+  },
+  {
+    "title":"Inconceivable",
+    "year":"2017",
+    "runtime":"1h 45m",
+    "director":"Jonathan Baker",
+    "lead_actors":["Nicolas Cage ","Gina Gershon ","Nicky Whelan "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt3481634/?ref_=nm_flmg_act_26"
+  },
+  {
+    "title":"Vengeance: A Love Story",
+    "year":"2017",
+    "runtime":"1h 39m",
+    "director":"Johnny Martin",
+    "lead_actors":["Nicolas Cage ","Anna Hutchison ","Don Johnson "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt5460530/?ref_=nm_flmg_act_27"
+  },
+  {
+    "title":"Arsenal",
+    "year":"2017",
+    "runtime":"1h 37m",
+    "director":"Steven C. Miller",
+    "lead_actors":["Nicolas Cage ","John Cusack ","Adrian Grenier "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt5580536/?ref_=nm_flmg_act_28"
+  },
+  {
+    "title":"Army of One",
+    "year":"2016",
+    "runtime":"1h 32m",
+    "director":"Larry Charles",
+    "lead_actors":["Nicolas Cage ","Russel Brand ","Paul Scheer "],
+    "rated":"PG 13",
+    "ïmdb": "https://www.imdb.com/title/tt4382824/?ref_=nm_flmg_act_29"
+  },
+  {
+    "title":"USS Indianapolis: Men Of Courage",
+    "year":"2016",
+    "runtime":"2h 8m",
+    "director":"Mario Van Peebles",
+    "lead_actors":["Nicolas Cage ","Tom Sizemore ","Thomas Jane "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt2032572/?ref_=nm_flmg_act_30"
+  },
+  {
+    "title":"Snowden",
+    "year":"2016",
+    "runtime":"2h 14m",
+    "director":"Oliver Stone",
+    "lead_actors":["Nicolas Cage ","Joseph Levitt Gordon ","Shailene Woodley "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt3774114/?ref_=nm_flmg_act_31"
+  },
+  {
+    "title":"Dog Eat Dog",
+    "year":"2016",
+    "runtime":"1h 33m",
+    "director":"Paul Schrader",
+    "lead_actors":["Nicolas Cage ","Willem Dafoe ","Omar J. Dorsey "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt4054654/?ref_=nm_flmg_act_32"
+  },
+  {
+    "title":"The Trust",
+    "year":"2016",
+    "runtime":"1h 32m",
+    "director":"Alex Brewer",
+    "lead_actors":["Nicolas Cage ","Elijah Wood ","Jerry Lewis "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt3733774/?ref_=nm_flmg_act_33"
+  },
+  {
+    "title":"Pay The Ghost",
+    "year":"2015",
+    "runtime":"1h 34m",
+    "director":"Uli Edel",
+    "lead_actors":["Nicolas Cage ","Veronica Ferres ","Lyriq Bent "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt3733778/?ref_=nm_flmg_act_34"
+  },
+  {
+    "title":"The Runner",
+    "year":"2015",
+    "runtime":"1h 30m",
+    "director":"Austin Stark",
+    "lead_actors":["Nicolas Cage ","Sarah Paulson ","Wendell Pierce "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt3687398/?ref_=nm_flmg_act_35"
+  },
+  {
+    "title":"Dying Of The Light",
+    "year":"2014",
+    "runtime":"1h 34m",
+    "director":"Paul Schrader",
+    "lead_actors":["Nicolas Cage ","Anton Yelchin ","Alexander Karim "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt1274586/?ref_=nm_flmg_act_36"
+  },
+  {
+    "title":"Left Behind",
+    "year":"2014",
+    "runtime":"1h 50m",
+    "director":"Vic Armstrong",
+    "lead_actors":["Nicolas Cage ","Lea Thompson ","Cassi Thomson "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt2467046/?ref_=nm_flmg_act_37"
+  },
+  {
+    "title":"Outcast",
+    "year":"2014",
+    "runtime":"1h 39m",
+    "director":"Nick Powell",
+    "lead_actors":["Nicolas Cage ","Hayden Christensen ","Alexandre Bailly "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt1552224/?ref_=nm_flmg_act_38"
+  },
+  {
+    "title":"Rage",
+    "year":"2014",
+    "runtime":"1h 32m",
+    "director":"Paco Cabezas",
+    "lead_actors":["Nicolas Cage ","Peter Stormare ","Rachel Nichols "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt2401807/?ref_=nm_flmg_act_39"
+  },
+  {
+    "title":"Joe",
+    "year":"2013",
+    "runtime":"1h 57m",
+    "director":"David Gordon Green",
+    "lead_actors":["Nicolas Cage ","Tye Sheridan ","Gary Poulter "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt2382396/?ref_=nm_flmg_act_40"
+  },
+  {
+    "title":"The Croods",
+    "year":"2013",
+    "runtime":"1h 38m",
+    "director":"Kirk DeMicco",
+    "lead_actors":["Nicolas Cage ","Ryan Reynolds ","Catherine Keener "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt0481499/?ref_=nm_flmg_act_41"
+  },
+  {
+    "title":"The Frozen Grounds",
+    "year":"2013",
+    "runtime":"1h 45m",
+    "director":"Scott Walker",
+    "lead_actors":["Nicolas Cage ","John Cusack ","Dean Norris "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt2005374/?ref_=nm_flmg_act_42"
+  },
+  {
+    "title":"Stolen",
+    "year":"2012",
+    "runtime":"1h 36m",
+    "director":"Simon West",
+    "lead_actors":["Nicolas Cage ","Josh Lucas ","Danny Huston "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt1656186/?ref_=nm_flmg_act_43"
+  },
+  {
+    "title":"Ghost Rider: Spirit Of Vengeance",
+    "year":"2011",
+    "runtime":"1h 36m",
+    "director":"Mark Neveldine",
+    "lead_actors":["Nicolas Cage ","Ciarán Hinds ","Idris Elba "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt1071875/?ref_=nm_flmg_act_44"
+  },
+  {
+    "title":"Trespass",
+    "year":"2011",
+    "runtime":"1h 31m",
+    "director":"Joel Schumacher",
+    "lead_actors":["Nicolas Cage ","Nicole Kidman ","Ben Mendelsohn "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt1674784/?ref_=nm_flmg_act_45"
+  },
+  {
+    "title":"Seeking Justice",
+    "year":"2011",
+    "runtime":"1h 45m",
+    "director":"Roger Donaldson",
+    "lead_actors":["Nicolas Cage ","Guy Pierce ","January Jones "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt1214962/?ref_=nm_flmg_act_46"
+  },
+  {
+    "title":"Drive Angry",
+    "year":"2011",
+    "runtime":"1h 44m",
+    "director":"Patrick Lussier",
+    "lead_actors":["Nicolas Cage ","William Fichtner ","Amber Heard "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt1502404/?ref_=nm_flmg_act_47"
+  },
+  {
+    "title":"Season Of The Witch",
+    "year":"2011",
+    "runtime":"1h 35m",
+    "director":"Dominic Sena",
+    "lead_actors":["Nicolas Cage ","Ron Perlman ","Christopher Lee "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0479997/?ref_=nm_flmg_act_48"
+  },
+  {
+    "title":"The Sorcerer's Apprentice",
+    "year":"2010",
+    "runtime":"1h 49m",
+    "director":"Jon Turteltaub",
+    "lead_actors":["Nicolas Cage ","Jay Baruchel ","Alfred Molina "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt0963966/?ref_=nm_flmg_act_49"
+  },
+  {
+    "title":"Kick Ass",
+    "year":"2010",
+    "runtime":"1h 57m",
+    "director":"Matthew Vaughn",
+    "lead_actors":["Nicolas Cage ","Mark Strong ","Aaron Taylor-Johnson "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt1250777/?ref_=nm_flmg_act_50"
+  },
+  {
+    "title":"Astro Boy",
+    "year":"2009",
+    "runtime":"1h 34m",
+    "director":"David Bowers",
+    "lead_actors":["Nicolas Cage ","Kristen Bell ","Charlize Theron "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt0375568/?ref_=nm_flmg_act_51"
+  },
+  {
+    "title":"Bad Lieutenant: Port Of Call New Orleans",
+    "year":"2009",
+    "runtime":"2h 2m",
+    "director":"Werner Herzog",
+    "lead_actors":["Nicolas Cage ","Val Kilmer ","Brad Dourif "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt1095217/?ref_=nm_flmg_act_52"
+  },
+  {
+    "title":"G-Force",
+    "year":"2009",
+    "runtime":"1h 28m",
+    "director":"Hoyt Yeatman",
+    "lead_actors":["Nicolas Cage ","Will Arnett ","Zach Galifianakis "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt0436339/?ref_=nm_flmg_act_53"
+  },
+  {
+    "title":"Knowing",
+    "year":"2009",
+    "runtime":"2h 1m",
+    "director":"Alex Proyas",
+    "lead_actors":["Nicolas Cage ","Rose Byrne ","Lara Robinson "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0448011/?ref_=nm_flmg_act_54"
+  },
+  {
+    "title":"Bangkok Dangerous",
+    "year":"2007",
+    "runtime":"1h 39m",
+    "director":"Danny Pang",
+    "lead_actors":["Nicolas Cage ","Charlie Yeung ","Dom Hetrakul "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0814022/?ref_=nm_flmg_act_55"
+  },
+  {
+    "title":"National Treasure: Book Of Secrets",
+    "year":"2007",
+    "runtime":"2h 4m",
+    "director":"John Turtletaub",
+    "lead_actors":["Nicolas Cage ","Diane Kruger ","Helen Mirren "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt0465234/?ref_=nm_flmg_act_56"
+  },
+  {
+    "title":"Next",
+    "year":"2007",
+    "runtime":"1h 36m",
+    "director":"Lee Tamahori",
+    "lead_actors":["Nicolas Cage ","Julianne Moore ","Jessica Biel "],
+    "rated":"PG 13",
+    "ïmdb": "https://www.imdb.com/title/tt0435705/?ref_=nm_flmg_act_57"
+  },
+  {
+    "title":"Ghost Rider",
+    "year":"2007",
+    "runtime":"1h 50m",
+    "director":"Mark Steven Johnson",
+    "lead_actors":["Nicolas Cage ","Peter Fonda ","Sam Elliott "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0259324/?ref_=nm_flmg_act_60"
+  },
+  {
+    "title":"The Wicker Man",
+    "year":"2006",
+    "runtime":"1h 42m",
+    "director":"Neil LaBute",
+    "lead_actors":["Nicolas Cage ","Ellen Burstyn ","Leelee Sobieski "],
+    "rated":"PG 13",
+    "ïmdb": "https://www.imdb.com/title/tt0450345/?ref_=nm_flmg_act_61"
+  },
+  {
+    "title":"World Trade Center",
+    "year":"2006",
+    "runtime":"2h 9m",
+    "director":"Oliver Stone",
+    "lead_actors":["Nicolas Cage ","Michael Peña ","Maria Bello "],
+    "rated":"PG 13",
+    "ïmdb": "https://www.imdb.com/title/tt0469641/?ref_=nm_flmg_act_62"
+  },
+  {
+    "title":"The Ant Bully",
+    "year":"2006",
+    "runtime":"1h 28m",
+    "director":"John A. Davis",
+    "lead_actors":["Nicolas Cage ","Paul Giamatti ","Julia Roberts "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt0429589/?ref_=nm_flmg_act_63"
+  },
+  {
+    "title":"The Weather Man",
+    "year":"2005",
+    "runtime":"1h 42m",
+    "director":"Gore Verbinski",
+    "lead_actors":["Nicolas Cage ","Michael Caine ","Hope Davis "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0384680/?ref_=nm_flmg_act_64"
+  },
+  {
+    "title":"Lord Of War",
+    "year":"2005",
+    "runtime":"2h 2m",
+    "director":"Andrew Niccol",
+    "lead_actors":["Nicolas Cage ","Ian Holm ","Ethan Hawke "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0399295/?ref_=nm_flmg_act_65"
+  },
+  {
+    "title":"National Treasure",
+    "year":"2004",
+    "runtime":"2h 11m",
+    "director":"John Turtletaub",
+    "lead_actors":["Nicolas Cage ","Sean Bean ","Jon Voigt "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt0368891/?ref_=nm_flmg_act_66"
+  },
+  {
+    "title":"Matchstick Men",
+    "year":"2003",
+    "runtime":"1h 56m",
+    "director":"Ridley Scott",
+    "lead_actors":["Nicolas Cage ","Sam Rockwell ","Alison Lohman "],
+    "rated":"PG 13",
+    "ïmdb": "https://www.imdb.com/title/tt0325805/?ref_=nm_flmg_act_67"
+  },
+  {
+    "title":"Adaptation",
+    "year":"2002",
+    "runtime":"1h 55m",
+    "director":"Spike Jonze",
+    "lead_actors":["Nicolas Cage ","Meryl Streep ","Chris Cooper "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0268126/?ref_=nm_flmg_act_68"
+  },
+  {
+    "title":"Sonny",
+    "year":"2002",
+    "runtime":"1h 50m",
+    "director":"Nicolas Cage",
+    "lead_actors":["Nicolas Cage ","Mena Suvari ","Harry Dean Stanton "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0305973/?ref_=nm_flmg_act_69"
+  },
+  {
+    "title":"Windtalkers",
+    "year":"2002",
+    "runtime":"2h 14m",
+    "director":"John Woo",
+    "lead_actors":["Nicolas Cage ","Christian Slater ","Adam Beach "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0245562/?ref_=nm_flmg_act_70"
+  },
+  {
+    "title":"Christmas Carol: The Movie",
+    "year":"2001",
+    "runtime":"1h 17m",
+    "director":"Jimmy T. Murakami",
+    "lead_actors":["Nicolas Cage ","Kate Winslet ","Simon Callow "],
+    "rated":"PG",
+    "ïmdb": "https://www.imdb.com/title/tt0259929/?ref_=nm_flmg_act_71"
+  },
+  {
+    "title":"Captain Corelli's Mandolin",
+    "year":"2001",
+    "runtime":"2h 11m",
+    "director":"John Madden",
+    "lead_actors":["Nicolas Cage ","Penelope Cruz ","John Hurt "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0238112/?ref_=nm_flmg_act_72"
+  },
+  {
+    "title":"The Family Man",
+    "year":"2000",
+    "runtime":"2h 5m",
+    "director":"Brett Ratner",
+    "lead_actors":["Nicolas Cage ","Téa Leoni ","Don Cheadle "],
+    "rated":"PG 13",
+    "ïmdb": "https://www.imdb.com/title/tt0218967/?ref_=nm_flmg_act_73"
+  },
+  {
+    "title":"Gone In 60 Seconds",
+    "year":"2000",
+    "runtime":"1h 58m",
+    "director":"Dominic Sena",
+    "lead_actors":["Nicolas Cage ","Angelina Jolie ","Giovanni Ribisi "],
+    "rated":"",
+    "ïmdb": "https://www.imdb.com/title/tt0187078/?ref_=nm_flmg_act_74"
+  },
+  {
+    "title":"Bringing Out The Dead",
+    "year":"1999",
+    "runtime":"2h 1m",
+    "director":"Marin Scorsese",
+    "lead_actors":["Nicolas Cage ","Ving Rhames ","Tom Sizemore "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0163988/?ref_=nm_flmg_act_75"
+  },
+  {
+    "title":"8MM",
+    "year":"1999",
+    "runtime":"2h 3m",
+    "director":"Joel Schumacher",
+    "lead_actors":["Nicolas Cage ","Joaquin Phoenix ","James Gandolfini "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0134273/?ref_=nm_flmg_act_76"
+  },
+  {
+    "title":"Snake Eyes",
+    "year":"1998",
+    "runtime":"1h 38m",
+    "director":"Brian DePalma",
+    "lead_actors":["Nicolas Cage ","Gary Sinise ","Luiz Guzman "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0120832/?ref_=nm_flmg_act_77"
+  },
+  {
+    "title":"City Of Angels",
+    "year":"1998",
+    "runtime":"1h 54m",
+    "director":"Brad Silberling",
+    "lead_actors":["Nicolas Cage ","Meg Ryan ","Andre Braugher "],
+    "rated":"PG 13",
+    "ïmdb": "https://www.imdb.com/title/tt0120632/?ref_=nm_flmg_act_78"
+  },
+  {
+    "title":"Face/Off",
+    "year":"1998",
+    "runtime":"2h 18m",
+    "director":"John Woo",
+    "lead_actors":["Nicolas Cage ","John Travolta ","Joan Allen "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0119094/?ref_=nm_flmg_act_79"
+  },
+  {
+    "title":"Con Air",
+    "year":"1997",
+    "runtime":"1h 55m",
+    "director":"Simon West",
+    "lead_actors":["Nicolas Cage ","John Malcovich ","John Cusack "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0118880/?ref_=nm_flmg_act_80"
+  },
+  {
+    "title":"The Rock",
+    "year":"1996",
+    "runtime":"2h 16m",
+    "director":"Michael Bay",
+    "lead_actors":["Nicolas Cage ","Sean Connery ","Ed Harris "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0117500/?ref_=nm_flmg_act_81"
+  },
+  {
+    "title":"Leaving Las Vegas",
+    "year":"1995",
+    "runtime":"1h 51m",
+    "director":"Mike Figgis",
+    "lead_actors":["Nicolas Cage ","Elizabeth Shue ","Jullian Sands "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0113627/?ref_=nm_flmg_act_82"
+  },
+  {
+    "title":"Kiss Of Death",
+    "year":"1995",
+    "runtime":"1h 41m",
+    "director":"Barbet Schroeder",
+    "lead_actors":["Nicolas Cage ","David Caruso ","Samuel L. Jackson "],
+    "rated":"R",
+    "imdb": "https://www.imdb.com/title/tt0113552/?ref_=nm_flmg_act_83"
+  },
+  {
+    "title":"Trapped In Paradise",
+    "year":"1994",
+    "runtime":"1h 51m",
+    "director":"George Gallo",
+    "lead_actors":["Nicolas Cage ","Jon Lovitz ","Dana Carvey "],
+    "rated":"PG 13",
+    "ïmdb": "https://www.imdb.com/title/tt0111477/?ref_=nm_flmg_act_84"
+  },
+  {
+    "title":"It Could Happen To You",
+    "year":"1994",
+    "runtime":"1h 41m",
+    "director":"Andrew Bergman",
+    "lead_actors":["Nicolas Cage ","Rosie Perez ","Bridget Fonda "],
+    "rated":"PG",
+    "imdb": "https://www.imdb.com/title/tt0110167/?ref_=nm_flmg_act_85"
+  },
+  {
+    "title":"Guarding Tess",
+    "year":"1994",
+    "runtime":"1h 38m",
+    "director":"Hugh Wilson",
+    "lead_actors":["Nicolas Cage ","Shirley Mclaine ","Austin Pendleton "],
+    "rated":"PG 13",
+    "imdb": "https://www.imdb.com/title/tt0109951/?ref_=nm_flmg_act_86"
+  },
+  {
+    "title":"Deadfall",
+    "year":"1993",
+    "runtime":"1h 38m",
+    "director":"Christopher Coppola",
+    "lead_actors":["Nicolas Cage ","Michael Biehn ","Charlie Sheen "],
+    "rated":"R",
+    "imdb": "https://www.imdb.com/title/tt0106684/?ref_=nm_flmg_act_87"
+  },
+  {
+    "title":"Red Rock West",
+    "year":"1993",
+    "runtime":"1h 38m",
+    "director":"John Dahl",
+    "lead_actors":["Nicolas Cage ","Dennis Hopper ","J.T. Walsh "],
+    "rated":"R",
+    "ïmdb": "https://www.imdb.com/title/tt0105226/?ref_=nm_flmg_act_88"
+  },
+  {
+    "title":"Amos And Andrew",
+    "year":"1993",
+    "runtime":"1h 36m",
+    "director":"E. Max Frye",
+    "lead_actors":["Nicolas Cage ","Samuel L. Jackson ","Michael Lerner "],
+    "rated":"PG 13",
+    "ïmdb": "https://www.imdb.com/title/tt0106266/?ref_=nm_flmg_act_89"
+
+  },
+  {
+    "title":"Honeymoon in Vegas",
+    "year":"1992",
+    "runtime":"1h 36m",
+    "director":"Andrew Bergman",
+    "lead_actors":["Nicolas Cage ","Sarah Jessica Parker ","James Caan "],
+    "rated":"PG 13",
+    "ïmdb": "https://www.imdb.com/title/tt0104438/?ref_=nm_flmg_act_90"
+  },
+  {
+    "title":"Zandalee",
+    "year":"1991",
+    "runtime":"1h 40m",
+    "director":"Sam Pillsbury",
+    "lead_actors":["Nicolas Cage ","Erika Anderson ","Judge Reinhold "],
+    "rated":"R",
+    "imdb":"https://www.imdb.com/title/tt0101004/?ref_=nm_flmg_act_91"
+  },
+  {
+    "title":"Fire Birds",
+    "year":"1990",
+    "runtime":"1h 25m",
+    "director":"David Green",
+    "lead_actors":["Nicolas Cage ","Tommy Lee Jones ","Sean Young "],
+    "rated":"PG 13",
+    "imdb":"https://www.imdb.com/title/tt0099575/?ref_=nm_flmg_act_93"
+  },
+  {
+    "title":"Wild At Heart",
+    "year":"1990",
+    "runtime":"2h 5m",
+    "director":"David Lynch",
+    "lead_actors":["Nicolas Cage ","Laura Dern ","Willem Dafoe "],
+    "rated":"R",
+    "imdb":"https://www.imdb.com/title/tt0100935/?ref_=nm_flmg_act_94"
+  },
+  {
+    "title":"Time To Kill",
+    "year":"1989",
+    "runtime":"1h 50m",
+    "director":"Giuliano Montaldo",
+    "lead_actors":["Nicolas Cage ","Ricky Tognazzi ","Gianluca Favilla "],
+    "rated":"R",
+    "imdb":"https://www.imdb.com/title/tt0100762/?ref_=nm_flmg_act_95"
+  },
+  {
+    "title":"Vampire's Kiss",
+    "year":"1988",
+    "runtime":"1h 43m",
+    "director":"Robert Bierman",
+    "lead_actors":["Nicolas Cage ","Maria Conchita ","Jennifer Beals "],
+    "rated":"R",
+    "imdb":"https://www.imdb.com/title/tt0098577/?ref_=nm_flmg_act_97"
+  },
+  {
+    "title":"Moonstruck",
+    "year":"1987",
+    "runtime":"1h 42m",
+    "director":"Norman Jewison",
+    "lead_actors":["Nicolas Cage ","Cher ","Danny Aiello "],
+    "rated":"PG",
+    "imdb":"https://www.imdb.com/title/tt0093565/?ref_=nm_flmg_act_98"
+  },
+  {
+    "title":"Raising Arizona",
+    "year":"1987",
+    "runtime":"1h 34m",
+    "director":"The Coen Brothers",
+    "lead_actors":["Nicolas Cage ","Holly Hunter ","John Goodman "],
+    "rated":"PG 13",
+    "imdb":"https://www.imdb.com/title/tt0093822/?ref_=nm_flmg_act_99"
+  },
+  {
+    "title":"Peggy Sue Got Married",
+    "year":"1986",
+    "runtime":"1h 43m",
+    "director":"Francis Ford Coppola",
+    "lead_actors":["Nicolas Cage ","Kathleen Turner ","Jim Carrey "],
+    "rated":"PG 13",
+    "imdb":"https://www.imdb.com/title/tt0091738/?ref_=nm_flmg_act_100"
+  },
+  {
+    "title":"The Boy In Blue",
+    "year":"1986",
+    "runtime":"1h 40m",
+    "director":"Charles Jarrott",
+    "lead_actors":["Nicolas Cage ","Cynthia Dale ","Christopher Plummer "],
+    "rated":"R",
+    "imdb":"https://www.imdb.com/title/tt0090769/?ref_=nm_flmg_act_101"
+  },
+  {
+    "title":"Birdy",
+    "year":"1984",
+    "runtime":"2h",
+    "director":"Alan Parker",
+    "lead_actors":["Nicolas Cage ","Matthew Modine ","John Harkins "],
+    "rated":"R",
+    "imdb":"https://www.imdb.com/title/tt0086969/?ref_=nm_flmg_act_102"
+  },
+  {
+    "title":"The Cotton Club",
+    "year":"1984",
+    "runtime":"2h 9m",
+    "director":"Francis Ford Coppola",
+    "lead_actors":["Nicolas Cage ","Richard Gere ","Gregory Hines "],
+    "rated":"R",
+    "imdb":"https://www.imdb.com/title/tt0087089/?ref_=nm_flmg_act_103"
+  },
+  {
+    "title":"Racing With The Moon",
+    "year":"1984",
+    "runtime":"1h 48m",
+    "director":"Richard Benjamin",
+    "lead_actors":["Nicolas Cage ","Sean Penn ","Elizabeth McGovern "],
+    "rated":"PG",
+    "imdb":"https://www.imdb.com/title/tt0087968/?ref_=nm_flmg_act_104"
+  },
+  {
+    "title":"Rumble Fish",
+    "year":"1983",
+    "runtime":"1h 34m",
+    "director":"Francis Ford Coppola",
+    "lead_actors":["Nicolas Cage ","Matt Dillon ","Dennis Hopper "],
+    "rated":"R",
+    "imdb":"https://www.imdb.com/title/tt0086216/?ref_=nm_flmg_act_105"
+  },
+  {
+    "title":"Valley Girl",
+    "year":"1983",
+    "runtime":"1h 39m",
+    "director":"Martha Coolidge",
+    "lead_actors":["Nicolas Cage ","Deborah Foreman ","Elizabeth Daily "],
+    "rated":"R",
+    "imdb":"https://www.imdb.com/title/tt0086525/?ref_=nm_flmg_act_106"
+  }
+]
+

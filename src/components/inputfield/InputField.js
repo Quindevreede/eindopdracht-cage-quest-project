@@ -1,16 +1,17 @@
 import React from 'react';
 
-function InputField({ name, inputType, label, value, changeHandler}) {
+function InputField({ name, className, type, label, value, onChange}) {
   return (
     <>
       <label htmlFor={`${name}-field`}>{label}</label>
-      <input
-        name={name}
-        id={`${name}-field`}
-        type={inputType}
-        value={value}
-        onChange={changeHandler}
-      />
+        <input
+            name={name}
+            className={className}
+            id={`${name}-field`}
+            type={type}
+            value={value}
+            onChange={onChange}
+        />
     </>
   );
 }

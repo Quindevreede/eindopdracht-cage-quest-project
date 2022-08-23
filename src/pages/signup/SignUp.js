@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
-import main from "../../assets/main.jpg";
+import PageTitle from "../../components/pagetitle/PageTitle";
+import Image from "../../components/image/Image";
+import InputField from "../../components/inputfield/InputField";
+import Button from "../../components/button/Button";
 
 function SignUp () {
     const [ email, setEmail ] = useState ( '' );
@@ -43,22 +46,27 @@ function SignUp () {
         toggleLoading ( false );
     }
 
+    const handleChange =
+        ( e )  => { setPassword ( e.target.value )
+    };
+
     return (
         <>
-            <section className="outer-content-container">
-                <div className="inner-content-container">
-                    <h1>REGISTER</h1>
-                    <section className="image-container">
-                        <img src={ main } className="nic-main-two" alt="nicolas cage main"/>
-                        <img src={ main } className="nic-main-two" alt="nicolas cage main"/>
-                    </section>
-                    <form onSubmit={ handleSubmit }>
+            <section className="outer-content__container">
+                <div className="inner-content__container">
+                    <PageTitle text="REGISTER" />
+                    <div className="image__container">
+                    <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                    <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                    </div>
+
+                        <form onSubmit={ handleSubmit }>
                         <label htmlFor="email-field">
                             EMAIL ADDRESS:
-                            <input
-                                className="form-container"
+                            <InputField
+                                className="form__container"
                                 type="email"
-                                id="email-field"
+                                id="email"
                                 name="email"
                                 value={ email }
                                 onChange={ ( e ) => setEmail ( e.target.value ) }
@@ -67,8 +75,8 @@ function SignUp () {
 
                         <label htmlFor="username-field">
                             USERNAME:
-                            <input
-                                className="form-container"
+                            <InputField
+                                className="form__container"
                                 type="text"
                                 id="username-field"
                                 value={ username }
@@ -76,29 +84,32 @@ function SignUp () {
                             />
                         </label>
 
-                        <label htmlFor="password-field">
-                            PASSWORD:
-                            <input
-                                className="form-container"
-                                type="password"
-                                id="password-field"
-                                name="password"
-                                value={ password }
-                                onChange={ ( e ) => setPassword ( e.target.value ) }
-                            />
-                        </label>
-                        { error && <p className="error">ERROR</p> }
-                        <button
+                            <label htmlFor="password-field">
+                                PASSWORD:
+                                <InputField
+                                    className="form__container"
+                                    type="password"
+                                    id="password-field"
+                                    name="password"
+                                    value={ password }
+                                    onChange={ handleChange }
+                                />
+                            </label>
+                        { error && <p className="error-message">ERROR username and/or password input must be at least 7 characters</p> }
+
+                        <Button
                             type="submit"
-                            className="form-button"
+                            buttonStyle="btn--form"
+                            buttonSize="btn--small"
                             disabled={ loading }
                         >
                             REGISTER
-                        </button>
+                        </Button>
 
                     </form>
-
-                    <p>ALREADY HAVE AN ACCOUNT? <Link to="/signin">LOG IN</Link></p>
+                    <section className="text__content">
+                        <p>ALREADY HAVE AN ACCOUNT? <Link to="/signin">LOG IN</Link></p>
+                    </section>
                 </div>
             </section>
         </>

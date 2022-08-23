@@ -1,4 +1,4 @@
-const questions = [
+const quizQuestions = [
     {
         questionText: 'WHO IS YOUR FAVOURITE VAMPIRE?',
         answerOptions: [
@@ -37,4 +37,4 @@ const questions = [
     },
 ];
 
-export default questions;
+export default quizQuestions;

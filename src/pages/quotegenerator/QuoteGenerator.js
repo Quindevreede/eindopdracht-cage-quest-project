@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './QuoteGenerator.css';
-import main from "../../assets/main.jpg";
+import './quoteGenerator.css';
+import PageTitle from "../../components/pagetitle/PageTitle";
+import Image from "../../components/image/Image";
+import Button from "../../components/button/Button";
 
 function QuoteGenerator() {
     const [quote, setQuote] = useState([0]);
@@ -30,21 +32,29 @@ function QuoteGenerator() {
 
     return (
         <>
-            <section className="outer-content-container">
-                <div className="inner-content-container">
-                    <h1>QUOTE GENERATOR:</h1>
-                    <section className="image-container">
-                        <img src={main} className="nic-main-four" alt="nicolas cage main"/>
-                        <img src={main} className="nic-main-four" alt="nicolas cage main"/>
-                        <img src={main} className="nic-main-four" alt="nicolas cage main"/>
-                        <img src={main} className="nic-main-four" alt="nicolas cage main"/>
-                    </section>
-                    <div className="quote-generator">
+            <section className="outer-content__container">
+                <div className="inner-content__container">
+                    <PageTitle text="QUOTE GENERATOR" />
+                    <div className="image__container">
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                    </div>
+                    <div className="quote-generator__container">
                 <h5 className="quote">QUOTE:</h5>
                 <h1>"{quote[0].quote}"</h1>
                 <p>{quote[0].title}</p>
                 <p>{quote[0].year}</p>
-                <button className="button-quote" onClick={() => window.location.reload(false)}>CLICK FOR NEW QUOTE!</button>
+                <Button
+                    buttonStyle="btn--default"
+                    buttonSize="btn--small"
+                    type="button"
+                    onClick={() => window.location.reload(false)}
+                >
+                    CLICK FOR NEW QUOTE!
+                </Button>
             </div>
                 </div>
             </section>

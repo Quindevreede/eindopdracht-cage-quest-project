@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { AuthContext } from './context/AuthContext';
 import './App.css';
 import Homepage from './pages/homepage/Homepage';
+import Filmography from './pages/filmography/Filmography'
 import Start from './pages/start/Start';
 import SignIn from './pages/signin/SignIn';
 import SignUp from './pages/signup/SignUp';
@@ -31,7 +32,7 @@ function App () {
                     <Route exact path="/signup">
                         <SignUp/>
                     </Route>
-                    <Route path="/profile">
+                    <Route path="/homepage">
                         { isAuth ? <Homepage/> : <Redirect to="/" /> }
                     </Route>
                     <Route path="/top10">
@@ -42,6 +43,9 @@ function App () {
                     </Route>
                     <Route exact path="/quote-generator">
                         { isAuth ? <QuoteGenerator/> : <Redirect to="/" /> }
+                    </Route>
+                    <Route exact path="/filmography">
+                        <Filmography/>
                     </Route>
                     <Route exact path="/newsletter">
                         { isAuth ? <Newsletter/> : <Redirect to="/" /> }

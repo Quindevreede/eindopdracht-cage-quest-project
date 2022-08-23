@@ -1,21 +1,23 @@
 import React from 'react';
-import './Quiz.css';
+import './quiz.css';
 import QuizComponent from "../../components/quizcomponent/QuizComponent";
-import main from "../../assets/main.jpg";
+import PageTitle from "../../components/pagetitle/PageTitle";
+import Image from "../../components/image/Image";
 
 function Quiz() {
 
         return (
             <>
-                <section className="outer-content-container">
-                    <div className="inner-content-container">
-                        <h1>QUIZ</h1>
-                        <section className="image-container">
-                            <img src={main} className="nic-main-four" alt="nicolas cage main"/>
-                            <img src={main} className="nic-main-four" alt="nicolas cage main"/>
-                            <img src={main} className="nic-main-four" alt="nicolas cage main"/>
-                            <img src={main} className="nic-main-four" alt="nicolas cage main"/>
-                        </section>
+                <section className="outer-content__container">
+                    <div className="inner-content__container">
+                        <PageTitle text="QUIZ" />
+                        <div className="image__container">
+                            <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                            <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                            <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                            <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                            <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        </div>
                         <QuizComponent />
                     </div>
                 </section>

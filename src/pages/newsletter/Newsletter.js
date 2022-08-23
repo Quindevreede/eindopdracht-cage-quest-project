@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import "./Newsletter.css";
+import "./newsletter.css";
 import InputField from "../../components/inputfield/InputField";
 import Button from "../../components/button/Button";
+import PageTitle from "../../components/pagetitle/PageTitle";
+import Image from "../../components/image/Image";
 
 function Newsletter() {
 
-    // initialiseer één state variabele met daarin een object aan form-waardes
-    // let op: de namen van de keys moeten overeenkomen met de name-attributen van de velden
     const [formState, setFormState] = useState({
         firstname: '',
         lastname: '',
@@ -20,8 +20,6 @@ function Newsletter() {
         console.log(formState);
     }
 
-    // handleFormChange wordt afgevuurd bij elke verandering en zorgt dan dat het huidige state object wordt gekopieerd
-    // alleen de object key van het bijbehorende inputveld wordt overschreven met een nieuwe waarde
     function handleFormChange(e) {
         const changedFieldName = e.target.name;
         const newValue = e.target.type === "checkbox" ? e.target.checked : e.target.value;
@@ -30,69 +28,103 @@ function Newsletter() {
             ...formState,
             [changedFieldName]: newValue,
         });
-
-        console.log(`The value of input ${e.target.name} has just been set to ${e.target.value}`);
     }
 
     return (
         <>
-            <section className="outer-content-container">
-                <div className="inner-content-container">
-        <form onSubmit={handleSubmit}>
+            <section className="outer-content__container">
+                <div className="inner-content__container">
+                    <PageTitle text="NEWSLETTER" />
+                    <div className="image__container">
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                        <Image alt="nic-cage" imageSize="img--small" imagePosition="img--center"/>
+                    </div>
+                    <p>(Firstname, Lastname and Age are required)</p>
+                    <form onSubmit={handleSubmit}>
             <fieldset>
-                <legend>Gegevens</legend>
+                <legend><strong>Personal Information</strong></legend>
                 <section>
-                    <InputField name="firstname" label="Voornaam" inputType="text" value={formState.firstname} changeHandler={handleFormChange} />
+                    <InputField
+                        className="form__container"
+                        name="firstname"
+                        label="Firstname"
+                        type="text"
+                        value={formState.firstname}
+                        onChange={handleFormChange}
+                    />
                     {formState.firstname.length > 15 && <p className="error-message">Firstname can't be longer than 15 characters!</p>}
                 </section>
                 <section>
-                    <InputField name="lastname" label="Achternaam" inputType="text" value={formState.lastname} changeHandler={handleFormChange} />
+                    <InputField
+                        className="form__container"
+                        name="lastname"
+                        label="Lastname"
+                        type="text"
+                        value={formState.lastname}
+                        onChange={handleFormChange} />
                     {formState.lastname.length > 15 && <p className="error-message">Lastname can't be longer than 15 characters!</p>}
                 </section>
                 <section>
-                    <InputField name="age" label="Leeftijd" inputType="number" value={formState.age} changeHandler={handleFormChange} />
+                    <InputField
+                        className="form__container form__container--newsletter"
+                        name="age"
+                        label="Age"
+                        type="number"
+                        placeholder=""
+                        value={formState.age}
+                        onChange={handleFormChange} />
                     {formState.age < 0 && <p className="error-message">Age can't be a negative number!</p>}
                 </section>
             </fieldset>
 
             <fieldset>
-                <legend>Jouw review</legend>
-
+                <legend><strong>Your Review</strong></legend>
                 <section>
                 <label htmlFor="recipe-comments">
-                    Opmerkingen:
+                    Comments:
                     <textarea
+                        className="form__container"
+                        type="text"
                         name="comments"
-                        id="recipe-comments"
+                        id="comments"
                         rows="4"
                         cols="40"
-                        placeholder="Wat vond je van het recept?"
+                        placeholder="Fill in your comments?"
                         value={formState.comments}
                         onChange={handleFormChange}
                     >
                         {formState.comments.length > 0 && <p className="error-message">Age can't be a negative number!</p>}
           </textarea>
                 </label>
-                    {formState.comments.length > 50 && <p className="error-message">Comments must be under 50 characters!</p>}
+                    {formState.comments.length > 150 && <p className="error-message">Comments must be under 50 characters!</p>}
                 </section>
+                <br/>
                 <label htmlFor="recipe-newsletter">
                     <input
+                        className="form__container"
                         type="checkbox"
                         name="newsletter"
                         checked={formState.newsletter}
                         onChange={handleFormChange}
                     />
-                    Ik schrijf me in voor de nieuwsbrief
+                    I AM NOT A ROBOT!<br/>
                 </label>
 
+                <div>
+                    {formState.age > 0 && formState.lastname.length < 15 && formState.firstname.length < 15 ?
                 <Button
                     type="submit"
-                    buttonStyle="none"
+                    buttonStyle="btn--form"
                     buttonSize="btn--small"
                     disabled={formState.newsletter === false}
-                >VERSTUREN</Button>
+                >VERSTUREN</Button> : <div></div>}
+                </div>
             </fieldset>
         </form>
+
                 </div>
             </section>
             </>
