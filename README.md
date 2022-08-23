@@ -9,6 +9,7 @@ the design for this app works best on small(mobile) screens
 3. API keys
 4. Installation Guide
 5. Starting the application
+6. Register and Login
 
 ### 1. Project introduction
 
@@ -97,7 +98,7 @@ You start the application by using:
 
 Open http://localhost:3000 to view the page in the browser.
 
-### 5. Register and Log-in
+### 6. Register and Log-in
 Now, when the application is opened in a window and you want access to the content of the app, you have to
 Register. You can do so on the Register page and you need to register the following:
 > Email
