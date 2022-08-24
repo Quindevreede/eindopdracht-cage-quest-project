@@ -86,7 +86,7 @@ function AuthContextProvider ( {children} ) {
             });
         }
         return function cleanup() {
-            console.log ( "no user has registered yet" );
+            console.log ("no user has registered yet");
             controller.abort ();
         }
     }
