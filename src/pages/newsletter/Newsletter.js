@@ -99,7 +99,7 @@ function Newsletter() {
                         {formState.comments.length > 0 && <p className="error-message">Age can't be a negative number!</p>}
           </textarea>
                 </label>
-                    {formState.comments.length > 150 && <p className="error-message">Comments must be under 50 characters!</p>}
+                    {formState.comments.length > 50 && <p className="error-message">Comments must be under 50 characters!</p>}
                 </section>
                 <br/>
                 <label htmlFor="recipe-newsletter">
@@ -114,7 +114,7 @@ function Newsletter() {
                 </label>
 
                 <div>
-                    {formState.age > 0 && formState.lastname.length < 16 && formState.firstname.length < 16 ?
+                    {formState.lastname.length < 16 && formState.firstname.length < 16 && formState.age > 0 && formState.comments.length < 51 ?
                 <Button
                     type="submit"
                     buttonStyle="btn--form"

@@ -51,12 +51,14 @@ function AuthContextProvider ( {children} ) {
     }
 
     async function fetchUserData ( id,token,redirectUrl ) {
+        const controller = new AbortController ();
         try {
             const result = await axios.get ( `https://frontend-educational-backend.herokuapp.com/api/user`, {
                 headers : {
                     "Content-Type" : "application/json",
                     Authorization : `Bearer ${ token }`,
                 },
+                signal: controller.signal,
             });
 
             toggleIsAuth ( {
@@ -82,6 +84,10 @@ function AuthContextProvider ( {children} ) {
                 user: null,
                 status: 'done',
             });
+        }
+        return function cleanup() {
+            console.log ("no user has registered yet");
+            controller.abort ();
         }
     }
 
