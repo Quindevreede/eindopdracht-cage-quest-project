@@ -114,7 +114,7 @@ function Newsletter() {
                 </label>
 
                 <div>
-                    {formState.age > 0 && formState.lastname.length < 15 && formState.firstname.length < 15 ?
+                    {formState.age > 0 && formState.lastname.length < 16 && formState.firstname.length < 16 ?
                 <Button
                     type="submit"
                     buttonStyle="btn--form"
