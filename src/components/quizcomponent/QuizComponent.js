@@ -6,7 +6,7 @@ import Button from "../button/Button";
 const apiKey = 'a0aac18fb528d2c26cc33ed4a52c554a';
 
 function QuizComponent () {
-    const [ movies,setMovies ] = useState ( [ 774152 ] );
+    const [ movies,setMovies ] = useState ( [ 1000129 ] );
     const [ endpoint,setEndpoint ] = useState ( `https://api.themoviedb.org/3/movie/${ movies }?api_key=${ apiKey }&language=en-US` );
     const [ loading,toggleLoading ] = useState ( false );
     const [ error,setError ] = useState ( false );
