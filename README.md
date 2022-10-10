@@ -36,22 +36,56 @@ Necessities (Benodigdheden):
 
 STEP 01:
 ---
-First we need a Javascript IDE code editor to be able to read and edit the application. 
+A) First we need a Javascript IDE code editor to be able to read and edit the application. 
 We can download this one on: https://www.jetbrains.com/webstorm/download/#section=windows
 
 - Click on the Download Button. (see src/assets/01.JPG)
+  <img height="150px" src="src\assets\01.jpg" width="300px"/>
 - Open the Webstorm-2022.2.exe file en start the Installation Wizard.
 - Follow the steps of the Installation Wizard en choose the preferred installation options (like the preferred installation target).
 - Check all the boxes on the Associations Area. (see src/assets/02.JPG and src/assets/03.PNG)
 
-(DUTCH: We hebben allereerst een Javascript IDE code editor nodig om de applicatie te kunnen lezen en bewerken. Deze kunnen we downloaden op:
+<img height="250px" src="src\assets\02.jpg" width="300px"/> 
+
+<img height="250px" src="src\assets\03.png" width="300px"/>
+
+B) We also need Node.js, Node is an open source development platform for executing JavaScript code server-side.
+
+- Download the Windows installer from Nodejs.org.
+  <img height="250px" src="src\assets\05.png" width="300px"/>
+- Run the installer (the . msi file you downloaded in the previous step.)
+  <img height="250px" src="src\assets\06.png" width="300px"/>
+- Follow the prompts in the installer (Accept the license agreement, click the NEXT button a bunch of times and accept the default installation settings).
+- Restart your computer.
+
+NOW WE CAN USE THE NPM BUILD AND NPM START COMMANDS IN WEBSTORM
+
+(DUTCH: 
+
+A) We hebben allereerst een Javascript IDE code editor nodig om de applicatie te kunnen lezen en bewerken. Deze kunnen we downloaden op:
 https://www.jetbrains.com/webstorm/download/#section=windows
 
 - Klik op de Download knop
+  <img height="150px" src="src\assets\01.jpg" width="300px"/>
 - Open nu op je computer WebStorm-2022.2.exe file en die start de Installation Wizard.
 - Volg de stappen van de Installation Wizard en kies de gewenste installatie opties, zoals waar je
   het programma wilt installeren.
 - Klik bij Associations alles aan.)
+
+<img height="250px" src="src\assets\02.jpg" width="300px"/> 
+
+<img height="250px" src="src\assets\03.png" width="300px"/>
+
+B) We hebben ook Node.js nodig, Node is een open source development platform voor uitvoering van JavaScript code aan de server-side.
+
+- Download de Windows installer van Nodejs.org.
+  <img height="250px" src="src\assets\05.png" width="300px"/>
+- Run de installer (de . msi file die je hebt gedownload in de vorige stap.)
+  <img height="250px" src="src\assets\06.png" width="300px"/>
+- Volg de stappen van de Installation Wizard (Accepteeer de license agreement, click meerdere malen op de NEXT button om de default installation settings te accepteren).
+- Herstart de computer.
+
+NU KUNNEN WE NMP BUILD EN NPM START UITVOEREN IN WEBSTORM!
 
 STEP 02:
 ---
@@ -63,6 +97,7 @@ Now you can open the application in WebStorm:
   Unpack the downloaded zip file en open it in Webstorm.
 
 See src/assets/04.PNG
+<img height="250px" src="src\assets\04.jpg" width="300px"/>
 
 (DUTCH Je kunt nu de applicatie in WebStorm openen:
 - Optie A -- open de bijgevoegde broncode in WebStorm.
